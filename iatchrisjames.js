@@ -3,22 +3,6 @@ define(['pipAPI', 'https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/IAT/qualt
 
 	return iatExtension({
 		category1 : {
-			name : 'Chris', //Will appear in the data.
-			title : {
-				media : {word : 'Chris'}, //Name of the category presented in the task.
-				css : {color:'#31940F','font-size':'2em'}, //Style of the category title.
-				height : 4 //Used to position the "Or" in the combined block.
-			}, 
-			stimulusMedia : [ //Stimuli content as PIP's media objects
-    		    {image : 'chris_cs.jpg'}, 
-    			{image : 'chris_cs1.jpg'}, 
-    			{image : 'chris_cs2.jpg'}, 
-    			{image : 'chris_cs3.jpg'}
-			], 
-			//Stimulus css (style)
-			stimulusCss : {color:'#31940F','font-size':'1.8em'}
-		},	
-		category2 :	{
 			name : 'James', //Will appear in the data.
 			title : {
 				media : {word : 'James'}, //Name of the category presented in the task.
@@ -29,7 +13,23 @@ define(['pipAPI', 'https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/IAT/qualt
     		    {image : 'james_cs.jpg'}, 
     			{image : 'james_cs1.jpg'}, 
     			{image : 'james_cs2.jpg'}, 
-    			{image : 'james_cs3.jpg'}		
+    			{image : 'james_cs3.jpg'}
+			], 
+			//Stimulus css (style)
+			stimulusCss : {color:'#31940F','font-size':'1.8em'}
+		},	
+		category2 :	{
+			name : 'Chris', //Will appear in the data.
+			title : {
+				media : {word : 'Chris'}, //Name of the category presented in the task.
+				css : {color:'#31940F','font-size':'2em'}, //Style of the category title.
+				height : 4 //Used to position the "Or" in the combined block.
+			}, 
+			stimulusMedia : [ //Stimuli content as PIP's media objects
+    		    {image : 'chris_cs.jpg'}, 
+    			{image : 'chris_cs1.jpg'}, 
+    			{image : 'chris_cs2.jpg'}, 
+    			{image : 'chris_cs3.jpg'}		
 			], 
 			//Stimulus css
 			stimulusCss : {color:'#31940F','font-size':'1.8em'}
