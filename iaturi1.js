@@ -3,7 +3,7 @@ define(['pipAPI', 'https://baranan.github.io/minno-tasks/quiat8.js'], function(A
 
 	return iatExtension({
 		category1 : {
-			name : 'active man', //Will appear in the data.
+			name : 'גבר אקטיבי', //Will appear in the data.
 			title : {
 				media : {word : 'גבר אקטיבי'}, //Name of the category presented in the task.
 				css : {color:'#31940F','font-size':'2em'}, //Style of the category title.
@@ -20,7 +20,7 @@ define(['pipAPI', 'https://baranan.github.io/minno-tasks/quiat8.js'], function(A
 			stimulusCss : {color:'#31940F','font-size':'1.8em'}
 		},	
 		category2 :	{
-			name : 'active woman', //Will appear in the data.
+			name : 'אשה אקטיבית', //Will appear in the data.
 			title : {
 				media : {word : 'אשה אקטיבית'}, //Name of the category presented in the task.
 				css : {color:'#31940F','font-size':'2em'}, //Style of the category title.
@@ -38,7 +38,7 @@ define(['pipAPI', 'https://baranan.github.io/minno-tasks/quiat8.js'], function(A
 		},
 			attribute1 :
 			{
-				name : 'negative',
+				name : 'רע',
 				title : {
 					media : {word : 'רע'},
 					css : {color:'#0000FF','font-size':'1.8em'},
@@ -56,7 +56,7 @@ define(['pipAPI', 'https://baranan.github.io/minno-tasks/quiat8.js'], function(A
 			},
 			attribute2 :
 			{
-				name : 'positive',
+				name : 'טוב',
 				title : {
 					media : {word : 'טוב'},
 					css : {color:'#0000FF','font-size':'1.8em'},
