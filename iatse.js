@@ -16,7 +16,7 @@ define(['pipAPI', 'https://baranan.github.io/minno-tasks/quiat8.js'], function(A
 					{word: 'אליי'}
 			], 
 			//Stimulus css (style)
-			stimulusCss : {color:'#31940F','font-size':'1.8em'}
+			stimulusCss : {color:'#31940F','font-size':'2.3em'}
 		},	
 		category2 :	{
 			name : 'אחרים', //Will appear in the data.
@@ -32,7 +32,7 @@ define(['pipAPI', 'https://baranan.github.io/minno-tasks/quiat8.js'], function(A
 					{word: 'שלכם'}			
 				], 
 			//Stimulus css
-			stimulusCss : {color:'#31940F','font-size':'1.8em'}
+			stimulusCss : {color:'#31940F','font-size':'2.3em'}
 		},
 			attribute1 :
 			{
