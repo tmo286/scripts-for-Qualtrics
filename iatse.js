@@ -10,7 +10,7 @@ define(['pipAPI', 'https://baranan.github.io/minno-tasks/quiat8.js'], function(A
 				height : 4 //Used to position the "Or" in the combined block.
 			}, 
 			stimulusMedia : [ //Stimuli content as PIP's media objects
-					{word: 'עצמי'},
+					{word: 'בעצמי'},
 					{word: 'אני'},
 					{word: 'שלי'},
 					{word: 'אליי'}
