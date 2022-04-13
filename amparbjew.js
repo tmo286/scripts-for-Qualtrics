@@ -99,9 +99,7 @@ define(['pipAPI', 'https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/amp/qualt
 			'<p style="font-size:16px; text-align:center; font-family:arial"><color="000000"><br/><br/>' + 
 			'Ready? Hit the <b>space bar</b>.</p>' + 
 			'<p style="font-size:12px; text-align:center; font-family:arial">' + 
-			'<color="000000">[Round blockNum of nBlocks]</p></div>',
-			endText: '<div><p style="font-size:20px; text-align:left; vertical-align:bottom; margin-left:10px; font-family:arial"><color="FFFFFF">'+
-			'השלמתם את המטלה<br/><br/>לחצו על מקש הרווח כדי להמשיך</p></div>',		
+			'<color="000000">[Round blockNum of nBlocks]</p></div>',		
 		base_url : {//Where are your images at?
 				image : 'https://tmo286.github.io/scripts-for-Qualtrics/images/'
 		}
