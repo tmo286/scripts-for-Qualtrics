@@ -53,7 +53,9 @@ define(['pipAPI', 'https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/amp/qualt
 			//An array of all media objects for this category.
 			mediaArray : [{image : 'ampchair.jpg'}, {image : 'amplamp.jpg'}, {image : 'ampumbrella.jpg'}]
 		},
-
+			sortingLabel1 : 'לא נעים', //Response is coded as 0. 
+			sortingLabel2 : 'נעים',  //Response is coded as 1.
+			randomizeLabelSides : false, //IF false, then label1 is on the left, and label2 is on the right.
 		base_url : {//Where are your images at?
 				image : 'https://tmo286.github.io/scripts-for-Qualtrics/images/'
 		}
