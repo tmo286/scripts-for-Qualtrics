@@ -39,7 +39,7 @@ define(['pipAPI', 'https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/amp/qualt
 		},
 
 		base_url : {//Where are your images at?
-			image : 'https://baranan.github.io/minno-tasks/images/ampImages'
+				image : 'https://tmo286.github.io/scripts-for-Qualtrics/images/'
 		}
 	});
 });
