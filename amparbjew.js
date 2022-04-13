@@ -26,8 +26,7 @@ define(['pipAPI', 'https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/amp/qualt
 					{image : 'w02.jpg'}, 
 					{image : 'w03.jpg'}, 
 					{image : 'w04.jpg'}, 
-					{image : 'w05.jpg'}, 
-					{image : 'w06.jpg'}]
+					{image : 'w05.jpg'}]
 			}
 		],
 			targetStimulusCSS : {color:'#0000FF','font-size':'2.3em'},
