@@ -68,16 +68,38 @@ define(['pipAPI', 'https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/amp/qualt
 			'<p style="font-size:12px; text-align:center; font-family:arial">' + 
 			'<color="000000">[Round 1 of nBlocks]</p></div>',
 			firstBlockInst : '<div><p style="font-size:20px; text-align:right; margin-right:10px; font-family:arial; direction: rtl"><color="000000"><br/>' + 
-			"ראיתם כמה מהר זה היה? אל תדאגו אם אתם מפספסים חלק מהתמונות" + 
+			"ראיתם כמה מהר זה היה? אל תדאגו אם אתם מפספסים חלק מהתמונות " + 
 			'דרגו את האותיות הסיניות לפי תחושת הבטן שלכם<br/><br/>' + 
 			'התרכזו באות הסינית ודרגו אותה כיותר נעימה מהאות הסינית הממוצעת באמצעות מקש <b>rightKey</b> ' + 
 			'או כפחות נעימה מהאות הסינית הממוצעת באמצעות מקש <b>leftKey</b><br/><br/> ' + 
-			'העריכו את האות הסינית ולא את התמונה שמופיעה לפניה' + 
+			'העריכו את האות הסינית ולא את התמונה שמופיעה לפניה ' + 
 			'תמונות אלו נועדו להסיח את דעתכם<br/><br/>' + 
 			'<p style="font-size:16px; text-align:center; font-family:arial"><color="000000"><br/><br/>' + 
 			'מוכנים? לחצו על מקש הרווח כדי להתחיל</p>' + 
 			'<p style="font-size:12px; text-align:center; font-family:arial">' + 
 			'<color="000000">[Round 2 of nBlocks]</p></div>',
+			middleBlockInst : '<div><p style="font-size:20px; text-align:right; margin-right:10px; font-family:arial; direction: rtl"><color="000000"><br/>' + 
+			'נמשיך לסבב נוסף של המטלה' + 
+			'החוקים נשארו אותו הדבר<br/><br/>' + 
+			'התרכזו באות הסינית ודרגו אותה כיותר נעימה מהאות הסינית הממוצעת באמצעות מקש <b>rightKey</b>' + 
+			'או כפחות נעימה מהאות הסינית הממוצעת באמצעות מקש <b>leftKey</b><br/><br/>' + 
+			'העריכו את האות הסינית ולא את התמונה שמופיעה לפניה' + 
+			'תמונות אלו נועדו להסיח את דעתכם<br/><br/>' +  
+			'<p style="font-size:16px; text-align:center; font-family:arial"><color="000000"><br/><br/>' + 
+			'מוכנים? לחצו על מקש הרווח כדי להתחיל</p>' + 
+			'<p style="font-size:12px; text-align:center; font-family:arial">' + 
+			'<color="000000">[Round blockNum of nBlocks]</p></div>',
+			lastBlockInst : '<div><p style="font-size:20px; text-align:right; margin-right:10px; font-family:arial; direction: rtl"><color="000000"><br/>' + 
+			'נמשיך לסבב האחרון של המטלה' + 
+			'החוקים נשארו אותו הדבר<br/><br/>' + 
+			'התרכזו באות הסינית ודרגו אותה כיותר נעימה מהאות הסינית הממוצעת באמצעות מקש <b>rightKey</b>' + 
+			'או כפחות נעימה מהאות הסינית הממוצעת באמצעות מקש <b>leftKey</b><br/><br/>' + 
+			'העריכו את האות הסינית ולא את התמונה שמופיעה לפניה' + 
+			'תמונות אלו נועדו להסיח את דעתכם<br/><br/>' +  
+			'<p style="font-size:16px; text-align:center; font-family:arial"><color="000000"><br/><br/>' + 
+			'Ready? Hit the <b>space bar</b>.</p>' + 
+			'<p style="font-size:12px; text-align:center; font-family:arial">' + 
+			'<color="000000">[Round blockNum of nBlocks]</p></div>',		
 		base_url : {//Where are your images at?
 				image : 'https://tmo286.github.io/scripts-for-Qualtrics/images/'
 		}
