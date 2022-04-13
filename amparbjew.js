@@ -56,7 +56,17 @@ define(['pipAPI', 'https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/amp/qualt
 			sortingLabel1 : 'לא נעים', //Response is coded as 0. 
 			sortingLabel2 : 'נעים',  //Response is coded as 1.
 			randomizeLabelSides : false, //IF false, then label1 is on the left, and label2 is on the right.
-
+			exampleBlockInst: '<div><p style="font-size:20px; text-align:right; margin-right:10px; font-family:arial; direction: rtl"><color="000000"><br/>' + 
+			'הקישו על מקש <B>rightKey</B>' +
+			'אם האות היא יותר נעימה מהאות הסינית הממוצעת ' + 
+			'הקישו על מקש <b>leftKey</b>' + 
+			'אם האות היא פחות נעימה מהאות הסינית הממוצעת<br/><br/>' + 
+			'התמונות יופיעו ויעלמו במהירות' + 
+			'זכרו להתעלם מהתמונה שמופיעה לפני האות הסינית ולהעריך רק את האות הסינית עצמה<br/><br/></p>'  + 
+			'<p style="font-size:16px; text-align:center; font-family:arial"><color="000000"><br/><br/>' + 
+			'כאשר אתם מוכנים להתאמן בכמה צעדים במטלה לחצו על מקש הרווח</p>' + 
+			'<p style="font-size:12px; text-align:center; font-family:arial">' + 
+			'<color="000000">[Round 1 of nBlocks]</p></div>',
 		base_url : {//Where are your images at?
 				image : 'https://tmo286.github.io/scripts-for-Qualtrics/images/'
 		}
