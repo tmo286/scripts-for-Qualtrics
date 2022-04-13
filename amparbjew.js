@@ -92,7 +92,7 @@ define(['pipAPI', 'https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/amp/qualt
 			lastBlockInst : '<div><p style="font-size:20px; text-align:right; margin-right:10px; font-family:arial; direction: rtl"><color="000000"><br/>' + 
 			'נמשיך לסבב האחרון של המטלה <br/>' + 
 			'החוקים נשארו אותו הדבר<br/><br/>' + 
-			'התרכזו באות הסינית ודרגו אותה כיותר נעימה מהאות הסינית הממוצעת באמצעות מקש <b>rightKey</b>' + 
+			'התרכזו באות הסינית ודרגו אותה כיותר נעימה מהאות הסינית הממוצעת באמצעות מקש <b>rightKey</b> ' + 
 			'או כפחות נעימה מהאות הסינית הממוצעת באמצעות מקש <b>leftKey</b><br/><br/>' + 
 			'העריכו את האות הסינית ולא את התמונה שמופיעה לפניה <br/>' + 
 			'תמונות אלו נועדו להסיח את דעתכם<br/><br/>' +  
