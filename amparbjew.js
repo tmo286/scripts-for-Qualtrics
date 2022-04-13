@@ -6,27 +6,29 @@ define(['pipAPI', 'https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/amp/qualt
 	return ampExtension({
 		primeCats :  [
 			{
-				nameForFeedback : 'Black people',  //Will be used in the user feedback 
-				nameForLogging : 'Black people', //Will be used in the logging
+				nameForFeedback : 'Arbs',  //Will be used in the user feedback 
+				nameForLogging : 'Arbs', //Will be used in the logging
 				//An array of all media objects for this category.
 				mediaArray : [
-				    {image : 'b01.jpg'}, 
-					{image : 'b02.jpg'}, 
-					{image : 'b03.jpg'}, 
-					{image : 'b04.jpg'}, 
-					{image : 'b05.jpg'}]
+				        {image : 'arb1.jpg'}, 
+					{image : 'arb2.jpg'}, 
+					{image : 'arb3.jpg'}, 
+					{image : 'arb4.jpg'}, 
+					{image : 'arb5.jpg'}, 
+					{image : 'arb6.jpg'}]
 
 			}, 
 			{
-				nameForFeedback : 'White people',  //Will be used in the user feedback 
-				nameForLogging : 'White people', //Will be used in the logging
+				nameForFeedback : 'Jews',  //Will be used in the user feedback 
+				nameForLogging : 'Jews', //Will be used in the logging
 				//An array of all media objects for this category.
 				mediaArray : [
-				    {image : 'w01.jpg'}, 
-					{image : 'w02.jpg'}, 
-					{image : 'w03.jpg'}, 
-					{image : 'w04.jpg'}, 
-					{image : 'w05.jpg'}]
+				        {image : 'jew1.jpg'}, 
+					{image : 'jew2.jpg'}, 
+					{image : 'jew3.jpg'}, 
+					{image : 'jew4.jpg'}, 
+					{image : 'jew5.jpg'}, 
+					{image : 'jew6.jpg'}]
 			}
 		],
 			targetStimulusCSS : {color:'#0000FF','font-size':'2.3em'},
