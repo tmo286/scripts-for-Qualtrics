@@ -58,43 +58,43 @@ define(['pipAPI', 'https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/amp/qualt
 			randomizeLabelSides : false, //IF false, then label1 is on the left, and label2 is on the right.
 			exampleBlockInst: '<div><p style="font-size:20px; text-align:right; margin-right:10px; font-family:arial; direction: rtl"><color="000000"><br/>' + 
 			'הקישו על מקש <B>rightKey</B> ' +
-			'אם האות היא יותר נעימה מהאות הסינית הממוצעת ' + 
+			'אם האות היא יותר נעימה מהאות הסינית הממוצעת <br/>' + 
 			'הקישו על מקש <b>leftKey</b> ' + 
 			'אם האות היא פחות נעימה מהאות הסינית הממוצעת<br/><br/>' + 
-			'התמונות יופיעו ויעלמו במהירות' + 
+			'התמונות יופיעו ויעלמו במהירות <br/>' + 
 			'זכרו להתעלם מהתמונה שמופיעה לפני האות הסינית ולהעריך רק את האות הסינית עצמה<br/><br/></p>'  + 
 			'<p style="font-size:16px; text-align:center; font-family:arial"><color="000000"><br/><br/>' + 
 			'כאשר אתם מוכנים להתאמן בכמה צעדים במטלה לחצו על מקש הרווח</p>' + 
 			'<p style="font-size:12px; text-align:center; font-family:arial">' + 
 			'<color="000000">[Round 1 of nBlocks]</p></div>',
 			firstBlockInst : '<div><p style="font-size:20px; text-align:right; margin-right:10px; font-family:arial; direction: rtl"><color="000000"><br/>' + 
-			"ראיתם כמה מהר זה היה? אל תדאגו אם אתם מפספסים חלק מהתמונות " + 
+			"ראיתם כמה מהר זה היה? אל תדאגו אם אתם מפספסים חלק מהתמונות <br/>" + 
 			'דרגו את האותיות הסיניות לפי תחושת הבטן שלכם<br/><br/>' + 
 			'התרכזו באות הסינית ודרגו אותה כיותר נעימה מהאות הסינית הממוצעת באמצעות מקש <b>rightKey</b> ' + 
 			'או כפחות נעימה מהאות הסינית הממוצעת באמצעות מקש <b>leftKey</b><br/><br/> ' + 
-			'העריכו את האות הסינית ולא את התמונה שמופיעה לפניה ' + 
+			'העריכו את האות הסינית ולא את התמונה שמופיעה לפניה <br/>' + 
 			'תמונות אלו נועדו להסיח את דעתכם<br/><br/>' + 
 			'<p style="font-size:16px; text-align:center; font-family:arial"><color="000000"><br/><br/>' + 
 			'מוכנים? לחצו על מקש הרווח כדי להתחיל</p>' + 
 			'<p style="font-size:12px; text-align:center; font-family:arial">' + 
 			'<color="000000">[Round 2 of nBlocks]</p></div>',
 			middleBlockInst : '<div><p style="font-size:20px; text-align:right; margin-right:10px; font-family:arial; direction: rtl"><color="000000"><br/>' + 
-			'נמשיך לסבב נוסף של המטלה' + 
+			'נמשיך לסבב נוסף של המטלה <br/>' + 
 			'החוקים נשארו אותו הדבר<br/><br/>' + 
-			'התרכזו באות הסינית ודרגו אותה כיותר נעימה מהאות הסינית הממוצעת באמצעות מקש <b>rightKey</b>' + 
+			'התרכזו באות הסינית ודרגו אותה כיותר נעימה מהאות הסינית הממוצעת באמצעות מקש <b>rightKey</b> ' + 
 			'או כפחות נעימה מהאות הסינית הממוצעת באמצעות מקש <b>leftKey</b><br/><br/>' + 
-			'העריכו את האות הסינית ולא את התמונה שמופיעה לפניה' + 
+			'העריכו את האות הסינית ולא את התמונה שמופיעה לפניה <br/>' + 
 			'תמונות אלו נועדו להסיח את דעתכם<br/><br/>' +  
 			'<p style="font-size:16px; text-align:center; font-family:arial"><color="000000"><br/><br/>' + 
 			'מוכנים? לחצו על מקש הרווח כדי להתחיל</p>' + 
 			'<p style="font-size:12px; text-align:center; font-family:arial">' + 
 			'<color="000000">[Round blockNum of nBlocks]</p></div>',
 			lastBlockInst : '<div><p style="font-size:20px; text-align:right; margin-right:10px; font-family:arial; direction: rtl"><color="000000"><br/>' + 
-			'נמשיך לסבב האחרון של המטלה' + 
+			'נמשיך לסבב האחרון של המטלה <br/>' + 
 			'החוקים נשארו אותו הדבר<br/><br/>' + 
 			'התרכזו באות הסינית ודרגו אותה כיותר נעימה מהאות הסינית הממוצעת באמצעות מקש <b>rightKey</b>' + 
 			'או כפחות נעימה מהאות הסינית הממוצעת באמצעות מקש <b>leftKey</b><br/><br/>' + 
-			'העריכו את האות הסינית ולא את התמונה שמופיעה לפניה' + 
+			'העריכו את האות הסינית ולא את התמונה שמופיעה לפניה <br/>' + 
 			'תמונות אלו נועדו להסיח את דעתכם<br/><br/>' +  
 			'<p style="font-size:16px; text-align:center; font-family:arial"><color="000000"><br/><br/>' + 
 			'Ready? Hit the <b>space bar</b>.</p>' + 
