@@ -38,7 +38,7 @@ define(['pipAPI', 'https://baranan.github.io/minno-tasks/quiat8.js'], function(A
 		},
 			attribute1 :
 			{
-				name : '4 יהלום',
+				name : 'יהלום 4',
 				title : {
 					media : {word : '4 יהלום'},
 					css : {color:'#0000FF','font-size':'1.8em'},
