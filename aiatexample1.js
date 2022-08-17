@@ -17,7 +17,7 @@ define(['pipAPI', 'https://tmo286.github.io/scripts-for-Qualtrics/fullaiateng.js
     			{word : 'אני מול המחשב'}
 			], 
 			//Stimulus css (style)
-			stimulusCss : {color:'#31940F','font-size':'1.8em'}
+			stimulusCss : {color:'#31940F','font-size':'2.3em'}
 		},	
 		category1:	{
 			name : 'שקר', //Will appear in the data.
@@ -34,7 +34,7 @@ define(['pipAPI', 'https://tmo286.github.io/scripts-for-Qualtrics/fullaiateng.js
     			{word : 'אני נמצא עכשיו בחנות'}			
 				], 
 			//Stimulus css
-			stimulusCss : {color:'#31940F','font-size':'1.8em'}
+			stimulusCss : {color:'#31940F','font-size':'2.3em'}
 		},
 			attribute1 :
 			{
