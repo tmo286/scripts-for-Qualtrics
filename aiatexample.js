@@ -40,7 +40,7 @@ define(['pipAPI', 'https://baranan.github.io/minno-tasks/quiat8.js'], function(A
 			{
 				name : 'יהלום 4',
 				title : {
-					media : {word : '4 יהלום'},
+					media : {word : 'יהלום 4'},
 					css : {color:'#0000FF','font-size':'1.8em'},
 					height : 4 //Used to position the "Or" in the combined block.
 				},
