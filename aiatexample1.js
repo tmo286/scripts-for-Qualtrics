@@ -131,9 +131,9 @@ define(['pipAPI', 'https://tmo286.github.io/scripts-for-Qualtrics/fullaiateng.js
 				'<p style="font-size:20px; text-align: center; vertical-align:bottom; margin-right:10px; font-family:arial; direction: rtl">' +
 				'<b>שימו לב! הקטגוריות החליפו מיקום</b><br/>' +
                 'הקישו באצבע שמאל על מקש <b>E</b> '+ 
-                'עבור פריטים ששייכים לקטגוריה <font color="#336600">leftCategory</font><br/>'+
+                'עבור פריטים ששייכים לקטגוריה <font color="#0000ff">leftCategory</font><br/>'+
                 'הקישו באצבע ימין על מקש <b>I</b> '+ 
-                'עבור פריטים ששייכים לקטגוריה <font color="#336600">rightCategory</font><br/>'+
+                'עבור פריטים ששייכים לקטגוריה <font color="#0000ff">rightCategory</font><br/>'+
 				'<u>השיבו מהר ככל האפשר אך היו מדויקים</u><br/><br/></p>'+
 				'<p align="center">לחצו על מקש הרווח כאשר אתם מוכנים להתחיל</font></p></div>',
 			leftKeyText : '"E" מקש', 
