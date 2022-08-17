@@ -1144,31 +1144,31 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 		//////////////////////////////
 		////Switch categories side block.
 		//Do the switch
-		blockParamsCats.right1 = blockParamsCombined.left2;
-		blockParamsCats.left1 = blockParamsCombined.right2;
-		rightCatTrial = (rightCatTrial == 'att1right') ? 'att2right' : 'att1right';
-		leftCatTrial = (leftCatTrial == 'att1left') ? 'att2left' : 'att1left';
-		blockParamsCats.instTemplate = isTouch ? globalObj.instSwitchCategoriesTouch : globalObj.instSwitchCategories;
+		blockParamsAtts.right1 = blockParamsCombined.left2;
+		blockParamsAtts.left1 = blockParamsCombined.right2;
+		rightAttTrial = (rightAttTrial == 'att1right') ? 'att2right' : 'att1right';
+		leftAttTrial = (leftAttTrial == 'att1left') ? 'att2left' : 'att1left';
+		blockParamsAtts.instTemplate = isTouch ? globalObj.instSwitchCategoriesTouch : globalObj.instSwitchCategories;
 		//Get numbers
-		blockParamsCats.nMiniBlocks = globalObj.blockSwitch_nMiniBlocks;
-		blockParamsCats.nTrials = globalObj.blockSwitch_nTrials;
+		blockParamsAtts.nMiniBlocks = globalObj.blockSwitch_nMiniBlocks;
+		blockParamsAtts.nTrials = globalObj.blockSwitch_nTrials;
 		//The rest is like blocks 1 and 2.
-		blockCondition = blockParamsCats.left1.name + ',' + blockParamsCats.right1.name;
-		blockParamsCats.blockNum = iBlock;
-		blockParamsCats.nCats = 2;
+		blockCondition = blockParamsAtts.left1.name + ',' + blockParamsAtts.right1.name;
+		blockParamsAtts.blockNum = iBlock;
+		blockParamsAtts.nAtts = 2;
 		//The layout for the sorting trials.
-		blockLayout = getLayout(blockParamsCats);
+		blockLayout = getLayout(blockParamsAtts);
 		//Fill the trials.
-		nTrialsInMini = blockParamsCats.nTrials/blockParamsCats.nMiniBlocks;
+		nTrialsInMini = blockParamsAtts.nTrials/blockParamsAtts.nMiniBlocks;
 		var iBlock5Mini;
-		if (blockParamsCats.nTrials > 0)
+		if (blockParamsAtts.nTrials > 0)
 		{
-    		trialSequence.push(getInstTrial(blockParamsCats));
-    		for (iBlock5Mini = 1; iBlock5Mini <= blockParamsCats.nMiniBlocks; iBlock5Mini++)
+    		trialSequence.push(getInstTrial(blockParamsAtts));
+    		for (iBlock5Mini = 1; iBlock5Mini <= blockParamsAtts.nMiniBlocks; iBlock5Mini++)
     		{
     			trialSequence.push(getMiniMixer2({
     			nTrialsInMini : nTrialsInMini, currentCond : blockCondition,
-    			rightTrial : rightCatTrial, leftTrial : leftCatTrial, blockNum : iBlock,
+    			rightTrial : rightAttTrial, leftTrial : leftAttTrial, blockNum : iBlock,
     			blockLayout : blockLayout}));
     		}
     		iBlock++;
