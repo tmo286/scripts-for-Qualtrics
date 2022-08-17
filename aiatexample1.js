@@ -143,7 +143,9 @@ define(['pipAPI', 'https://tmo286.github.io/scripts-for-Qualtrics/fullaiateng.js
 			blockFirstCombined_nMiniBlocks : 20,
 			blockSecondCombined_nTrials : 0, //Change to 0 if you want 5 blocks (you would probably want to increase blockFirstCombined_nTrials).	
 			blockSwitch_nTrials : 20,
-			blockSwitch_nMiniBlocks : 5,			
+			blockSwitch_nMiniBlocks : 5,	
+	    randomAttSide : true,
+	    randomBlockOrder : false,		
             remindErrorText :'<p align="center" style="font-size:"0.6em"; font-family:arial">' +
 			'<p/>',
 			finalText : 'לחצו על מקש הרווח בכדי להמשיך למטלה הבאה' 			
