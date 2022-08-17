@@ -1175,8 +1175,8 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 		//////////////////////////////
 		////The other combined block
 		//Get the categories side from the switch block.
-		blockParamsCombined.right2 = blockParamsCats.right1;
-		blockParamsCombined.left2 = blockParamsCats.left1;
+		blockParamsCombined.right2 = blockParamsAtts.right1;
+		blockParamsCombined.left2 = blockParamsAtts.left1;
 		blockCondition = blockParamsCombined.left2.name + '/' + blockParamsCombined.left1.name + ',' + blockParamsCombined.right2.name + '/' + blockParamsCombined.right1.name;
 		//Number variables.
 		blockParamsCombined.nMiniBlocks = globalObj.blockFirstCombined_nMiniBlocks;
