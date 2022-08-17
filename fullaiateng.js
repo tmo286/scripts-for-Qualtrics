@@ -1144,8 +1144,8 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 		//////////////////////////////
 		////Switch categories side block.
 		//Do the switch
-		blockParamsAtts.right1 = blockParamsCombined.left2;
-		blockParamsAtts.left1 = blockParamsCombined.right2;
+		blockParamsAtts.right1 = blockParamsCombined.left1;
+		blockParamsAtts.left1 = blockParamsCombined.right1;
 		rightAttTrial = (rightAttTrial == 'att1right') ? 'att2right' : 'att1right';
 		leftAttTrial = (leftAttTrial == 'att1left') ? 'att2left' : 'att1left';
 		blockParamsAtts.instTemplate = isTouch ? globalObj.instSwitchCategoriesTouch : globalObj.instSwitchCategories;
