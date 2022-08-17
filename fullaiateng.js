@@ -1,3 +1,4 @@
+//YBYB:Created from iat8.js, for Qualtrics
 define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) {
 
 	/**
@@ -27,6 +28,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 				canvasBackground: '#ffffff',
 				borderColor: 'lightblue'
 			},
+			//When scoring, we will consider the compatible condition the pairing condition that requires response with one key to [category1,attribute1] and the other key to [category2,attribute2]
 			category1 : {
 				name : 'Black people', //Will appear in the data and in the default feedback message.
 				title : {
@@ -63,27 +65,6 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 				//Stimulus css
 				stimulusCss : {color:'#336600','font-size':'2.3em'}
 			},
-			attribute2 :
-			{
-				name : 'Good words',
-				title : {
-					media : {word : 'Good words'},
-					css : {color:'#0000FF','font-size':'1.8em'},
-					height : 4 //Used to position the "Or" in the combined block.
-				},
-				stimulusMedia : [ //Stimuli content as PIP's media objects
-					{word: 'laughter'},
-					{word: 'happy'},
-					{word: 'glorious'},
-					{word: 'joy'},
-					{word: 'wonderful'},
-					{word: 'peace'},
-					{word: 'pleasure'},
-					{word: 'love'}
-				],
-				//Stimulus css
-				stimulusCss : {color:'#0000FF','font-size':'2.3em'}
-			},
 			attribute1 :
 			{
 				name : 'Bad words',
@@ -101,6 +82,27 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 					{word: 'terrible'},
 					{word: 'nasty'},
 					{word: 'evil'}
+				],
+				//Stimulus css
+				stimulusCss : {color:'#0000FF','font-size':'2.3em'}
+			},
+			attribute2 :
+			{
+				name : 'Good words',
+				title : {
+					media : {word : 'Good words'},
+					css : {color:'#0000FF','font-size':'1.8em'},
+					height : 4 //Used to position the "Or" in the combined block.
+				},
+				stimulusMedia : [ //Stimuli content as PIP's media objects
+					{word: 'laughter'},
+					{word: 'happy'},
+					{word: 'glorious'},
+					{word: 'joy'},
+					{word: 'wonderful'},
+					{word: 'peace'},
+					{word: 'pleasure'},
+					{word: 'love'}
 				],
 				//Stimulus css
 				stimulusCss : {color:'#0000FF','font-size':'2.3em'}
@@ -326,6 +328,115 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 		_.defaults(piCurrent, options, iatObj);
 		_.extend(API.script.settings, options.settings);
 
+        /**
+        **** For Qualtrics
+        */
+        API.addSettings('onEnd', window.minnoJS.onEnd);
+
+		//For debugging the logger
+		//window.minnoJS.logger = console.log;
+		//window.minnoJS.onEnd = console.log;
+		
+        API.addSettings('logger', {
+            // gather logs in array
+            onRow: function(logName, log, settings, ctx){
+                if (!ctx.logs) ctx.logs = [];
+                ctx.logs.push(log);
+            },
+            // onEnd trigger save (by returning a value)
+            onEnd: function(name, settings, ctx){
+                return ctx.logs;
+            },
+            // Transform logs into a string
+            // we save as CSV because qualtrics limits to 20K characters and this is more efficient.
+            serialize: function (name, logs) {
+                var headers = ['block', 'trial', 'cond', 'comp', 'type', 'cat',  'stim', 'resp', 'err', 'rt', 'd', 'fb', 'bOrd'];
+                //console.log(logs);
+                var myLogs = [];
+                var iLog;
+                for (iLog = 0; iLog < logs.length; iLog++)
+                {
+                    if(!hasProperties(logs[iLog], ['trial_id', 'name', 'responseHandle', 'stimuli', 'media', 'latency'])){
+                        //console.log('---MISSING PROPERTIY---');
+                        //console.log(logs[iLog]);
+                        //console.log('---MISSING PROPERTIY---');
+                    }
+                    else if(!hasProperties(logs[iLog].data, ['block', 'condition', 'score', 'cong']))
+                    {
+                        //console.log('---MISSING data PROPERTIY---');
+                        //console.log(logs[iLog].data);
+                        //console.log('---MISSING data PROPERTIY---');
+                    }
+                    else
+                    {
+                        myLogs.push(logs[iLog]);
+                    }
+                }
+                var content = myLogs.map(function (log) { 
+                    return [
+                        log.data.block, //'block'
+                        log.trial_id, //'trial'
+                        log.data.condition, //'cond'
+                        log.data.cong, //'comp'
+                        log.name, //'type'
+                        log.stimuli[0], //'cat'
+                        log.media[0], //'stim'
+                        log.responseHandle, //'resp'
+                        log.data.score, //'err'
+                        log.latency, //'rt'
+                        '', //'d'
+                        '', //'fb'
+                        '' //'bOrd'
+                        ]; });
+                //console.log('mapped');
+                //Add a line with the feedback, score and block-order condition
+                content.push([
+                            9, //'block'
+                            999, //'trial'
+                            'end', //'cond'
+                            '', //'comp'
+                            '', //'type'
+                            '', //'cat'
+                            '', //'stim'
+                            '', //'resp'
+                            '', //'err'
+                            '', //'rt'
+                            piCurrent.d, //'d'
+                            piCurrent.feedback, //'fb'
+                            block3Cond //'bOrd'
+                        ]);
+                //console.log('added');
+                        
+                content.unshift(headers);
+                return toCsv(content);
+
+                function hasProperties(obj, props) {
+                    var iProp;
+                    for (iProp = 0; iProp < props.length; iProp++)
+                    {
+                        if (!obj.hasOwnProperty(props[iProp]))
+                        {
+                            //console.log('missing ' + props[iProp]);
+                            return false;
+                        }
+                    }
+                    return true;
+                }
+                function toCsv(matrice) { return matrice.map(buildRow).join('\n'); }
+                function buildRow(arr) { return arr.map(normalize).join(','); }
+                // wrap in double quotes and escape inner double quotes
+                function normalize(val) {
+                    var quotableRgx = /(\n|,|")/;
+                    if (quotableRgx.test(val)) return '"' + val.replace(/"/g, '""') + '"';
+                    return val;
+                }
+            },
+            // Set logs into an input (i.e. put them wherever you want)
+            send: function(name, serialized){
+                window.minnoJS.logger(serialized);
+            }
+        });
+
 		// are we on the touch version
 		var isTouch = piCurrent.isTouch;
 
@@ -366,10 +477,15 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 		API.addSettings('base_url',piCurrent.base_url);
 		API.addSettings('hooks',{
 				endTask: function(){
+					//console.log('compute score');
 					var DScoreObj = scorer.computeD();
 					piCurrent.feedback = DScoreObj.FBMsg;
 					piCurrent.d = DScoreObj.DScore; //YBYB: Added on 28March2017
-					API.save({block3Cond:block3Cond, feedback:DScoreObj.FBMsg, d: DScoreObj.DScore});
+					//console.log('score computed, d='+piCurrent.d + " fb=" + piCurrent.feedback);
+					//YBYB: API.save will not work in qualtrics
+					//API.save({block3Cond:block3Cond, feedback:DScoreObj.FBMsg, d: DScoreObj.DScore});
+					//Perhaps we need to add this to support Qualtrics
+					window.minnoJS.onEnd();
 				}
 			});
 		/**
@@ -377,7 +493,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 		 */
 		API.addTrialSets('sort',{
 			// by default each trial is correct, this is modified in case of an error
-			data: {score:0, parcel:'first'}, //We're using only one parcel for computing the score, so we're always going to call it 'first'.
+			data: {score:0, parcel:'none'}, //We're using only one parcel for computing the score, so we're always going to call it 'first'.
 			// set the interface for trials
 			input: [
 				{handle:'skip1',on:'keypressed', key:27}, //Esc + Enter will skip blocks
@@ -792,7 +908,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 
 		//Get a mixer for a mini-block in a 4-categories block.
 		function getMiniMixer4(params)
-		{//{nTrialsInMini : , currentCond : , rightTrial1 : , leftTrial1 : , rightTrial2 : , leftTrial2 : , blockNum : , blockLayout : )
+		{//{nTrialsInMini : , currentCond : , cong: , rightTrial1 : , leftTrial1 : , rightTrial2 : , leftTrial2 : , blockNum : , blockLayout : , parcel :)
 
 			////Because of the alternation, we randomize the trial order ourselves.
 			var atts = [];
@@ -819,14 +935,14 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 				mixerData.push(
 				{
 					inherit : (cats[iCat] == 1) ? params.leftTrial2 : params.rightTrial2,
-					data : {condition : params.currentCond, block : params.blockNum},
+					data : {condition : params.currentCond, block : params.blockNum, parcel:params.parcel, cong:params.cong},
 						layout : params.blockLayout
 				});
 				iCat++;
 				mixerData.push(
 				{
 					inherit : (atts[iAtt] == 1) ? params.leftTrial1 : params.rightTrial1,
-					data : {condition : params.currentCond, block : params.blockNum},
+					data : {condition : params.currentCond, block : params.blockNum, parcel:params.parcel, cong:params.cong},
 						layout : params.blockLayout
 				});
 				iAtt++;
@@ -922,6 +1038,16 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 		}
 		//Set the block's condition
 		blockCondition = blockParamsAtts.left1.name + ',' + blockParamsAtts.right1.name;
+		var COMPATIBLE = 'compatible';
+		var INCOMPATIBLE = 'incompatible';
+		var isCompatible = INCOMPATIBLE;
+		if ( (rightAttName == att1.name && rightCatName == cat1.name) || 
+			(rightAttName == att2.name && rightCatName == cat2.name) )
+		{
+			isCompatible = COMPATIBLE;
+		}
+		//console.log('rightAttName='+rightAttName+' rightCatName='+rightCatName+' att1.name='+att1.name+' cat1.name='+cat1.name + 'isCompatible='+isCompatible);
+		
 		//Number variables
 		blockParamsAtts.nMiniBlocks = globalObj.blockAttributes_nMiniBlocks;
 		blockParamsAtts.nTrials = globalObj.blockAttributes_nTrials;
@@ -982,10 +1108,10 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
     		for (iBlock3Mini = 1; iBlock3Mini <= blockParamsCombined.nMiniBlocks; iBlock3Mini++)
     		{
     			trialSequence.push(getMiniMixer4({
-    			nTrialsInMini : nTrialsInMini, currentCond : blockCondition,
+    			nTrialsInMini : nTrialsInMini, currentCond : blockCondition, cong:isCompatible, 
     			rightTrial1 : rightAttTrial, leftTrial1 : leftAttTrial,
     			rightTrial2 : rightCatTrial, leftTrial2 : leftCatTrial,
-    			blockNum : iBlock, blockLayout : blockLayout}));
+    			blockNum : iBlock, blockLayout : blockLayout, parcel:'first'}));
     		}
 			iBlock++;
 		}
@@ -1007,13 +1133,14 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 			for (iBlock4Mini = 1; iBlock4Mini <= blockParamsCombined.nMiniBlocks; iBlock4Mini++)
 			{
 				trialSequence.push(getMiniMixer4({
-				nTrialsInMini : nTrialsInMini, currentCond : blockCondition,
+				nTrialsInMini : nTrialsInMini, currentCond : blockCondition, cong:isCompatible, 
 				rightTrial1 : rightAttTrial, leftTrial1 : leftAttTrial,
 				rightTrial2 : rightCatTrial, leftTrial2 : leftCatTrial,
-				blockNum : iBlock, blockLayout : blockLayout}));
+				blockNum : iBlock, blockLayout : blockLayout, parcel:'second'}));
 			}
 		    iBlock++;
 		}
+		isCompatible = (isCompatible==INCOMPATIBLE ? COMPATIBLE : INCOMPATIBLE);
 		//////////////////////////////
 		////Switch categories side block.
 		//Do the switch
@@ -1074,16 +1201,16 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
     		for (iBlock6Mini = 1; iBlock6Mini <= blockParamsCombined.nMiniBlocks; iBlock6Mini++)
     		{
     			trialSequence.push(getMiniMixer4({
-    			nTrialsInMini : nTrialsInMini, currentCond : blockCondition,
+    			nTrialsInMini : nTrialsInMini, currentCond : blockCondition, cong:isCompatible, 
     			rightTrial1 : rightAttTrial, leftTrial1 : leftAttTrial,
     			rightTrial2 : rightCatTrial, leftTrial2 : leftCatTrial,
-    			blockNum : iBlock, blockLayout : blockLayout}));
+    			blockNum : iBlock, blockLayout : blockLayout, parcel:'first'}));
     		}
 			iBlock++;
 		}
 		//////////////////////////////
 		////Second combined block.
-		//Fourth block is another combined block.
+		//Seventh block is another combined block.
 		blockParamsCombined.blockNum = iBlock;
 		blockParamsCombined.nMiniBlocks = globalObj.blockSecondCombined_nMiniBlocks;
 		blockParamsCombined.nTrials = globalObj.blockSecondCombined_nTrials;
@@ -1104,10 +1231,10 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 			for (iBlock7Mini = 1; iBlock7Mini <= blockParamsCombined.nMiniBlocks; iBlock7Mini++)
 			{
 				trialSequence.push(getMiniMixer4({
-				nTrialsInMini : nTrialsInMini, currentCond : blockCondition,
+				nTrialsInMini : nTrialsInMini, currentCond : blockCondition, cong:isCompatible, 
 				rightTrial1 : rightAttTrial, leftTrial1 : leftAttTrial,
 				rightTrial2 : rightCatTrial, leftTrial2 : leftCatTrial,
-				blockNum : iBlock, blockLayout : blockLayout}));
+				blockNum : iBlock, blockLayout : blockLayout, parcel:'second'}));
 			}
 		}
 		//////////////////////////////
@@ -1134,19 +1261,13 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 		//Settings for the score computation.
 		scorer.addSettings('compute',{
 			ErrorVar:'score',
-			condVar:'condition',
+			condVar:'cong',
 			//condition 1
-			cond1VarValues: [
-				cat1.name + '/' + att1.name + ',' + cat2.name + '/' + att2.name,
-				cat2.name + '/' + att2.name + ',' + cat1.name + '/' + att1.name
-			],
+			cond1VarValues: [COMPATIBLE],
 			//condition 2
-			cond2VarValues: [
-				cat2.name + '/' + att1.name + ',' + cat1.name + '/' + att2.name,
-				cat1.name + '/' + att2.name + ',' + cat2.name + '/' + att1.name
-			],
-			parcelVar : "parcel", //We use only one parcel because it is probably not less reliable.
-			parcelValue : ['first'],
+			cond2VarValues: [INCOMPATIBLE],
+			parcelVar : "parcel", 
+			parcelValue : ['first', 'second'],
 			fastRT : 150, //Below this reaction time, the latency is considered extremely fast.
 			maxFastTrialsRate : 0.1, //Above this % of extremely fast responses within a condition, the participant is considered too fast.
 			minRT : 400, //Below this latency
