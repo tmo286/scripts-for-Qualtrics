@@ -145,7 +145,7 @@ define(['pipAPI', 'https://tmo286.github.io/scripts-for-Qualtrics/fullaiateng.js
 			blockSwitch_nTrials : 20,
 			blockSwitch_nMiniBlocks : 5,	
 	    randomAttSide : true,
-	    randomBlockOrder : true,		
+	    randomBlockOrder : false,		
             remindErrorText :'<p align="center" style="font-size:"0.6em"; font-family:arial">' +
 			'<p/>',
 			finalText : 'לחצו על מקש הרווח בכדי להמשיך למטלה הבאה' 			
