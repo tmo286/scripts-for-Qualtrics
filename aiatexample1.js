@@ -17,7 +17,7 @@ define(['pipAPI', 'https://tmo286.github.io/scripts-for-Qualtrics/fullaiateng.js
     			{word : 'אני מול המחשב'}
 			], 
 			//Stimulus css (style)
-			stimulusCss : {color:'#31940F','font-size':'2.3em'}
+			stimulusCss : {color:'#31940F','font-size':'2.1em'}
 		},	
 		category1:	{
 			name : 'שקר', //Will appear in the data.
@@ -34,14 +34,14 @@ define(['pipAPI', 'https://tmo286.github.io/scripts-for-Qualtrics/fullaiateng.js
     			{word : 'אני נמצא עכשיו בחנות'}			
 				], 
 			//Stimulus css
-			stimulusCss : {color:'#31940F','font-size':'2.3em'}
+			stimulusCss : {color:'#31940F','font-size':'2.1em'}
 		},
 			attribute1 :
 			{
 				name : 'יהלום 4',
 				title : {
 					media : {word : 'יהלום 4'},
-					css : {color:'#0000FF','font-size':'1.8em'},
+					css : {color:'#0000FF','font-size':'2em'},
 					height : 4 //Used to position the "Or" in the combined block.
 				},
 				stimulusMedia : [ //Stimuli content as PIP's media objects
@@ -52,14 +52,14 @@ define(['pipAPI', 'https://tmo286.github.io/scripts-for-Qualtrics/fullaiateng.js
 					{word: 'יש לי את הקלף 4 יהלום'}
 				],
 				//Stimulus css
-				stimulusCss : {color:'#0000FF','font-size':'2.3em'}
+				stimulusCss : {color:'#0000FF','font-size':'2.1em'}
 			},
 			attribute2 :
 			{
 				name : 'עלה 7',
 				title : {
 					media : {word : 'עלה 7'},
-					css : {color:'#0000FF','font-size':'1.8em'},
+					css : {color:'#0000FF','font-size':'2em'},
 					height : 4 //Used to position the "Or" in the combined block.
 				},
 				stimulusMedia : [ //Stimuli content as PIP's media objects
@@ -70,7 +70,7 @@ define(['pipAPI', 'https://tmo286.github.io/scripts-for-Qualtrics/fullaiateng.js
 					{word: 'יש לי את הקלף 7 עלה'}
 				],
 				//Stimulus css
-				stimulusCss : {color:'#0000FF','font-size':'2.3em'}
+				stimulusCss : {color:'#0000FF','font-size':'2.1em'}
 			},	
 			instAttributePractice: '<div><p align="center" style="font-size:20px; font-family:arial; direction: rtl">' +
                 '<font color="#000000"><u> חלק blockNum מתוך nBlocks </u><br/><br/></p>' +
