@@ -140,7 +140,7 @@ define(['pipAPI', 'https://tmo286.github.io/scripts-for-Qualtrics/fullaiateng.js
 			rightKeyText : '"I" מקש', 
             orText : 'או',
 			blockFirstCombined_nTrials : 60,
-			blockFirstCombined_nMiniBlocks : 20,
+			blockFirstCombined_nMiniBlocks : 15,
 			blockSecondCombined_nTrials : 0, //Change to 0 if you want 5 blocks (you would probably want to increase blockFirstCombined_nTrials).	
 			blockSwitch_nTrials : 20,
 			blockSwitch_nMiniBlocks : 5,	
