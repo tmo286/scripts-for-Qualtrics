@@ -1146,8 +1146,8 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 		//Do the switch
 		blockParamsCats.right1 = blockParamsCombined.left2;
 		blockParamsCats.left1 = blockParamsCombined.right2;
-		rightCatTrial = (rightCatTrial == 'cat1right') ? 'cat2right' : 'cat1right';
-		leftCatTrial = (leftCatTrial == 'cat1left') ? 'cat2left' : 'cat1left';
+		rightCatTrial = (rightCatTrial == 'att1right') ? 'att2right' : 'att1right';
+		leftCatTrial = (leftCatTrial == 'att1left') ? 'att2left' : 'att1left';
 		blockParamsCats.instTemplate = isTouch ? globalObj.instSwitchCategoriesTouch : globalObj.instSwitchCategories;
 		//Get numbers
 		blockParamsCats.nMiniBlocks = globalObj.blockSwitch_nMiniBlocks;
