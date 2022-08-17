@@ -2,7 +2,7 @@ define(['pipAPI', 'https://tmo286.github.io/scripts-for-Qualtrics/fullaiateng.js
     var API = new APIConstructor();
 
 	return iatExtension({
-		category1 : {
+		category2 : {
 			name : 'אמת', //Will appear in the data.
 			title : {
 				media : {word : 'אמת'}, //Name of the category presented in the task.
@@ -19,7 +19,7 @@ define(['pipAPI', 'https://tmo286.github.io/scripts-for-Qualtrics/fullaiateng.js
 			//Stimulus css (style)
 			stimulusCss : {color:'#31940F','font-size':'1.8em'}
 		},	
-		category2 :	{
+		category1:	{
 			name : 'שקר', //Will appear in the data.
 			title : {
 				media : {word : 'שקר'}, //Name of the category presented in the task.
