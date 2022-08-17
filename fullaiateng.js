@@ -1143,31 +1143,50 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 		isCompatible = (isCompatible==INCOMPATIBLE ? COMPATIBLE : INCOMPATIBLE);
 		//////////////////////////////
 		////Switch categories side block.
-		//Do the switch
-		blockParamsAtts.right1 = blockParamsCombined.left1;
-		blockParamsAtts.left1 = blockParamsCombined.right1;
-		rightAttTrial = (rightAttTrial == 'att1right') ? 'att2right' : 'att1right';
-		leftAttTrial = (leftAttTrial == 'att1left') ? 'att2left' : 'att1left';
-		blockParamsAtts.instTemplate = isTouch ? globalObj.instSwitchCategoriesTouch : globalObj.instSwitchCategories;
-		//Get numbers
-		blockParamsAtts.nMiniBlocks = globalObj.blockSwitch_nMiniBlocks;
-		blockParamsAtts.nTrials = globalObj.blockSwitch_nTrials;
-		//The rest is like blocks 1 and 2.
+		blockParamsAtts.left1 = att2;
+		blockParamsAtts.right1 = att1;
+		//Names of the trials in this block
+		var leftAttTrial = 'att2left';
+		var rightAttTrial = 'att1right';
+		if (rightAttName == att1.name)
+		{
+			blockParamsAtts.right1 = att2;
+			rightAttTrial = 'att2right';
+			leftAttTrial = 'att1left';
+			blockParamsAtts.left1 = att1;
+		}
+		//Set the block's condition
 		blockCondition = blockParamsAtts.left1.name + ',' + blockParamsAtts.right1.name;
+		var COMPATIBLE = 'compatible';
+		var INCOMPATIBLE = 'incompatible';
+		var isCompatible = INCOMPATIBLE;
+		if ( (rightAttName == att1.name && rightCatName == cat1.name) || 
+			(rightAttName == att2.name && rightCatName == cat2.name) )
+		{
+			isCompatible = COMPATIBLE;
+		}
+		//console.log('rightAttName='+rightAttName+' rightCatName='+rightCatName+' att1.name='+att1.name+' cat1.name='+cat1.name + 'isCompatible='+isCompatible);
+		
+		//Number variables
+		blockParamsAtts.nMiniBlocks = globalObj.blockAttributes_nMiniBlocks;
+		blockParamsAtts.nTrials = globalObj.blockAttributes_nTrials;
 		blockParamsAtts.blockNum = iBlock;
-		blockParamsAtts.nAtts = 2;
-		//The layout for the sorting trials.
+		blockParamsAtts.nCats = 2;
+		//Instructions trial
+		blockParamsAtts.instTemplate = isTouch ? globalObj.instAttributePracticeTouch : globalObj.instAttributePractice;
+		//Layout for the sorting trials
 		blockLayout = getLayout(blockParamsAtts);
-		//Fill the trials.
+		//Number of trials in a mini block.
 		nTrialsInMini = blockParamsAtts.nTrials/blockParamsAtts.nMiniBlocks;
-		var iBlock5Mini;
+		//Add a mixer for each mini block.
+		var iBlock1Mini;
 		if (blockParamsAtts.nTrials > 0)
 		{
     		trialSequence.push(getInstTrial(blockParamsAtts));
-    		for (iBlock5Mini = 1; iBlock5Mini <= blockParamsAtts.nMiniBlocks; iBlock5Mini++)
+    		for (iBlock1Mini = 1; iBlock1Mini <= blockParamsAtts.nMiniBlocks; iBlock1Mini++)
     		{
-    			trialSequence.push(getMiniMixer2({
-    			nTrialsInMini : nTrialsInMini, currentCond : blockCondition,
+    			trialSequence.push(getMiniMixer2(
+    			{nTrialsInMini : nTrialsInMini, currentCond : blockCondition,
     			rightTrial : rightAttTrial, leftTrial : leftAttTrial, blockNum : iBlock,
     			blockLayout : blockLayout}));
     		}
