@@ -84,8 +84,8 @@ define(['pipAPI', 'https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/IAT/qualt
 			instCategoriesPractice: '<div><p align="center" style="font-size:20px; font-family:arial">' +
 				'<font color="#000000"><u>Part blockNum of nBlocks </u><br/><br/></p>' +
 				'<p style="font-size:20px; text-align:left; vertical-align:bottom; margin-left:10px; font-family:arial">' +
-				'Put a left finger on the <b>E</b> key for items that belong to the category <font color="#0C0C0C">leftCategory</font>. ' +
-				'<br/>Put a right finger on the <b>I</b> key for items that belong to the category <font color="#0C0C0C">rightCategory</font>.<br/>' +
+				'Put a left finger on the <b>E</b> key for items that belong to the category <font color="#0C0C0C"><b>leftCategory</b></font>. ' +
+				'<br/>Put a right finger on the <b>I</b> key for items that belong to the category <font color="#0C0C0C"><b>rightCategory</b></font>.<br/>' +
 				'Items will appear one at a time.<br/><br/>' +
 				'If you make a mistake, a red <font color="#ff0000"><b>X</b></font> will appear. ' +
 				'Press the other key to continue.<br/>' +
@@ -94,8 +94,8 @@ define(['pipAPI', 'https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/IAT/qualt
 			instFirstCombined : '<div><p align="center" style="font-size:20px; font-family:arial">' +
 				'<font color="#000000"><u>Part blockNum of nBlocks </u><br/><br/></p>' +
 				'<p style="font-size:20px; text-align:left; vertical-align:bottom; margin-left:10px; font-family:arial">' +
-				'Use the <b>E</b> key for <font color="#0C0C0C">leftCategory</font> and for <font color="#048832">leftAttribute</font>.<br/>' +
-				'Use the <b>I</b> key for <font color="#0C0C0C">rightCategory</font> and for  <font color="#048832">rightAttribute</font>.<br/>' +
+				'Use the <b>E</b> key for <font color="#0C0C0C"><b>leftCategory</b></font> and for <font color="#048832">leftAttribute</font>.<br/>' +
+				'Use the <b>I</b> key for <font color="#0C0C0C"><b>rightCategory</b></font> and for  <font color="#048832">rightAttribute</font>.<br/>' +
 				'Each item belongs to only one category.<br/><br/>' +
 				'If you make a mistake, a red <font color="#ff0000"><b>X</b></font> will appear. ' +
 				'Press the other key to continue.<br/>' + 
@@ -105,8 +105,8 @@ define(['pipAPI', 'https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/IAT/qualt
 				'<font color="#000000"><u>Part blockNum of nBlocks </u><br/><br/></p>' +
 				'<p style="font-size:20px; text-align:left; vertical-align:bottom; margin-left:10px; font-family:arial">' +
 				'This is the same as the previous part.<br/>' +
-				'Use the <b>E</b> key for <font color="#0C0C0C">leftCategory</font> and for <font color="#048832">leftAttribute</font>.<br/>' +
-				'Use the <b>I</b> key for <font color="#0C0C0C">rightCategory</font> and for  <font color="#048832">rightAttribute</font>.<br/>' +
+				'Use the <b>E</b> key for <font color="#0C0C0C"><b>leftCategory</b></font> and for <font color="#048832">leftAttribute</font>.<br/>' +
+				'Use the <b>I</b> key for <font color="#0C0C0C"><b>rightCategory</b></font> and for  <font color="#048832">rightAttribute</font>.<br/>' +
 				'Each item belongs to only one category.<br/><br/>' +
 				'<u>Go as fast as you can</u> while being accurate.<br/><br/></p>' +
 				'<p align="center">Press the <b>space bar</b> when you are ready to start.</font></p></div>',
@@ -114,8 +114,8 @@ define(['pipAPI', 'https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/IAT/qualt
 				'<font color="#000000"><u>Part blockNum of nBlocks </u><br/><br/></p>' +
 				'<p style="font-size:20px; text-align:left; vertical-align:bottom; margin-left:10px; font-family:arial">' +
 				'<b>Watch out, the labels have changed position!</b><br/>' +
-				'Put the left finger on the <b>E</b> key for <font color="#0C0C0C">leftCategory</font>.<br/>' +
-				'Put the right finger on the <b>I</b> key for <font color="#0C0C0C">rightCategory</font>.<br/><br/>' +
+				'Put the left finger on the <b>E</b> key for <font color="#0C0C0C"><b>leftCategory</b></font>.<br/>' +
+				'Put the right finger on the <b>I</b> key for <font color="#0C0C0C"><b>rightCategory</b></font>.<br/><br/>' +
 				'<u>Go as fast as you can</u> while being accurate.<br/><br/></p>' +
 				'<p align="center">Press the <b>space bar</b> when you are ready to start.</font></p></div>',				
             randomBlockOrder : false,			
