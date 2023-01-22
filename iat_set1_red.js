@@ -85,7 +85,7 @@ define(['pipAPI', 'https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/IAT/qualt
 				'<font color="#000000"><u>Part blockNum of nBlocks </u><br/><br/></p>' +
 				'<p style="font-size:20px; text-align:left; vertical-align:bottom; margin-left:10px; font-family:arial">' +
 				'Put a left finger on the <b>E</b> key for items that belong to the category <b>leftCategory</b>. ' +
-				'<br/>Put a right finger on the <b>I</b> key for items that belong to the category ><b>rightCategory</b>.<br/>' +
+				'<br/>Put a right finger on the <b>I</b> key for items that belong to the category <b>rightCategory</b>.<br/>' +
 				'Items will appear one at a time.<br/><br/>' +
 				'If you make a mistake, a red <font color="#ff0000"><b>X</b></font> will appear. ' +
 				'Press the other key to continue.<br/>' +
