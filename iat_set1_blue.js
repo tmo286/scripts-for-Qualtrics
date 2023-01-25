@@ -43,7 +43,7 @@ define(['pipAPI', 'https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/IAT/qualt
 				name : 'Good',
 				title : {
 					media : {word : 'Good'},
-					css : {color:'#0000FF','font-size':'1.8em'},
+					css : {color:'#048832','font-size':'1.8em'},
 					height : 4 //Used to position the "Or" in the combined block.
 				},
 				stimulusMedia : [ //Stimuli content as PIP's media objects
@@ -60,7 +60,7 @@ define(['pipAPI', 'https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/IAT/qualt
 				name : 'Bad',
 				title : {
 					media : {word : 'Bad'},
-					css : {color:'#0000FF','font-size':'1.8em'},
+					css : {color:'#048832','font-size':'1.8em'},
 					height : 4 //Used to position the "Or" in the combined block.
 				},
 				stimulusMedia : [ //Stimuli content as PIP's media objects
