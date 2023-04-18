@@ -17,7 +17,7 @@ define(['pipAPI', 'https://baranan.github.io/minno-tasks/quiat8.js'], function(A
 					{word: 'אדון'}		
 			], 
 			//Stimulus css (style)
-			stimulusCss : {color:'#31940F','font-size':'1.8em'}
+			stimulusCss : {color:'#31940F','font-size':'2em'}
 		},	
 		category2 :	{
 			name : 'נשים', //Will appear in the data.
@@ -34,14 +34,14 @@ define(['pipAPI', 'https://baranan.github.io/minno-tasks/quiat8.js'], function(A
 					{word: 'גברת'}					
 				], 
 			//Stimulus css
-			stimulusCss : {color:'#31940F','font-size':'1.8em'}
+			stimulusCss : {color:'#31940F','font-size':'2em'}
 		},
 			attribute1 :
 			{
 				name : 'מנהיגות',
 				title : {
 					media : {word : 'מנהיגות'},
-					css : {color:'#0000FF','font-size':'1.8em'},
+					css : {color:'#0000FF','font-size':'2em'},
 					height : 4 //Used to position the "Or" in the combined block.
 				},
 				stimulusMedia : [ //Stimuli content as PIP's media objects
@@ -52,14 +52,14 @@ define(['pipAPI', 'https://baranan.github.io/minno-tasks/quiat8.js'], function(A
 					{word: 'שליטה'}					
 				],
 				//Stimulus css
-				stimulusCss : {color:'#0000FF','font-size':'2.3em'}
+				stimulusCss : {color:'#0000FF','font-size':'2em'}
 			},
 			attribute2 :
 			{
 				name : 'תמיכה',
 				title : {
 					media : {word : 'תמיכה'},
-					css : {color:'#0000FF','font-size':'1.8em'},
+					css : {color:'#0000FF','font-size':'2em'},
 					height : 4 //Used to position the "Or" in the combined block.
 				},
 				stimulusMedia : [ //Stimuli content as PIP's media objects
@@ -70,7 +70,7 @@ define(['pipAPI', 'https://baranan.github.io/minno-tasks/quiat8.js'], function(A
 					{word: 'עזרה'}
 				],
 				//Stimulus css
-				stimulusCss : {color:'#0000FF','font-size':'2.3em'}
+				stimulusCss : {color:'#0000FF','font-size':'2em'}
 			},	
 			instAttributePractice: '<div><p align="center" style="font-size:20px; font-family:arial; direction: rtl">' +
                 '<font color="#000000"><u> חלק blockNum מתוך nBlocks </u><br/><br/></p>' +
