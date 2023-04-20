@@ -143,6 +143,9 @@ define(['pipAPI', 'https://baranan.github.io/minno-tasks/quiat8.js'], function(A
 			leftKeyText : '"E" מקש', 
 			rightKeyText : '"I" מקש', 
             orText : 'או',
+				base_url : {//Where are your images at?
+				image : 'https://tmo286.github.io/scripts-for-Qualtrics/images/'
+			}ת 	
             remindErrorText :'<p align="center" style="font-size:"0.6em"; font-family:arial">' +
 			'<p/>',
 			finalText : 'לחצו על מקש הרווח בכדי להמשיך למטלה הבאה' 			
