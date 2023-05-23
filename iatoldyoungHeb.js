@@ -76,6 +76,9 @@ define(['pipAPI', 'https://baranan.github.io/minno-tasks/quiat8.js'], function(A
 				//Stimulus css
 				stimulusCss : {color:'#0000FF','font-size':'2.3em'}
 			},	
+			base_url : {//Where are your images at?
+				image : 'https://tmo286.github.io/scripts-for-Qualtrics/images/'
+			}, 			
 			instAttributePractice: '<div><p align="center" style="font-size:20px; font-family:arial; direction: rtl">' +
                 '<font color="#000000"><u> חלק blockNum מתוך nBlocks </u><br/><br/></p>' +
 				'<p style="font-size:20px; text-align: center; vertical-align:bottom; margin-right:10px; font-family:arial; direction: rtl">' +
