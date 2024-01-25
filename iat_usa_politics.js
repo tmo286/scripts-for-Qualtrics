@@ -3,7 +3,7 @@ define(['pipAPI', 'https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/IAT/qualt
 
 	return iatExtension({
 		category1 : {
-			name : 'Red Group', //Will appear in the data.
+			name : 'Republicans', //Will appear in the data.
 			title : {
 				media : {word : 'Republicans'}, //Name of the category presented in the task.
 				css : {color:'#F90D06','font-size':'2em'}, //Style of the category title.
@@ -21,7 +21,7 @@ define(['pipAPI', 'https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/IAT/qualt
 		category2 :	{
 			name : 'Democrats', //Will appear in the data.
 			title : {
-				media : {word : 'Blue Group'}, //Name of the category presented in the task.
+				media : {word : 'Democrats'}, //Name of the category presented in the task.
 				css : {color:'#0657F9','font-size':'2em'}, //Style of the category title.
 				height : 4 //Used to position the "Or" in the combined block.
 			}, 
