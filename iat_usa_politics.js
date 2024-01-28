@@ -66,7 +66,7 @@ define(['pipAPI', 'https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/IAT/qualt
 					{word: 'Awful'}
 				],
 				//Stimulus css
-				sstimulusCss : {color:'#048832','font-size':'2.3em'}
+				stimulusCss : {color:'#048832','font-size':'2.3em'}
 			},	
  			instAttributePractice: '<div><p align="center" style="font-size:20px; font-family:arial">' +
 				'<font color="#000000"><u>Part blockNum of nBlocks </u><br/><br/></p>' +
