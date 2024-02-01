@@ -113,8 +113,7 @@ define(['pipAPI', 'https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/IAT/qualt
 				'Put the left finger on the <b>E</b> key for <b>leftCategory</b>.<br/>' +
 				'Put the right finger on the <b>I</b> key for <b>rightCategory</b>.<br/><br/>' +
 				'<u>Go as fast as you can</u> while being accurate.<br/><br/></p>' +
-				'<p align="center">Press the <b>space bar</b> when you are ready to start.</font></p></div>',				
-            randomBlockOrder : false,			
+				'<p align="center">Press the <b>space bar</b> when you are ready to start.</font></p></div>',						
 			base_url : {//Where are your images at?
 				image : 'https://tmo286.github.io/scripts-for-Qualtrics/images/'
 			} 			
