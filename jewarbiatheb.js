@@ -55,7 +55,7 @@ define(['pipAPI', 'https://baranan.github.io/minno-tasks/quiat8.js'], function(A
 				{word: 'גרוע'}	
 				],
 				//Stimulus css
-				stimulusCss : {color:'#0000FF','font-size':'2.3em'}
+				stimulusCss : {color:'#0000FF','font-size':'3.0em'}
 			},
 			attribute2 :
 			{
@@ -74,7 +74,7 @@ define(['pipAPI', 'https://baranan.github.io/minno-tasks/quiat8.js'], function(A
 				{word: 'נפלא'}
 				],
 				//Stimulus css
-				stimulusCss : {color:'#0000FF','font-size':'2.3em'}
+				stimulusCss : {color:'#0000FF','font-size':'3.0em'}
 			},	
 			base_url : {//Where are your images at?
 				image : 'https://tmo286.github.io/scripts-for-Qualtrics/images/'
