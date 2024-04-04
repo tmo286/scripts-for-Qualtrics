@@ -3,9 +3,9 @@ define(['pipAPI', 'https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/IAT/qualt
 
 	return iatExtension({
 		category1 : {
-			name : 'Malybites', //Will appear in the data.
+			name : 'Maltybites', //Will appear in the data.
 			title : {
-				media : {word : "Malybites"}, //Name of the category presented in the task.
+				media : {word : "Maltybites"}, //Name of the category presented in the task.
 				css : {color:'#31940F','font-size':'2em'}, //Style of the category title.
 				height : 4 //Used to position the "Or" in the combined block.
 			}, 
