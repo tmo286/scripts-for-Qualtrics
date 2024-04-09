@@ -6,7 +6,7 @@ define(['pipAPI', 'https://baranan.github.io/minno-tasks/quiat8.js'], function(A
 			name : 'אני', //Will appear in the data.
 			title : {
 				media : {word : 'אני'}, //Name of the category presented in the task.
-				css : {color:'#31940F','font-size':'2em'}, //Style of the category title.
+				css : {color:'#31940F','font-size':'2.5em'}, //Style of the category title.
 				height : 4 //Used to position the "Or" in the combined block.
 			}, 
 			stimulusMedia : [ //Stimuli content as PIP's media objects
@@ -17,13 +17,13 @@ define(['pipAPI', 'https://baranan.github.io/minno-tasks/quiat8.js'], function(A
 					{word: 'אצלי'}		
 			], 
 			//Stimulus css (style)
-			stimulusCss : {color:'#31940F','font-size':'1.8em'}
+			stimulusCss : {color:'#31940F','font-size':'2.5em'}
 		},	
 		category2 :	{
 			name : 'אחר', //Will appear in the data.
 			title : {
 				media : {word : 'אחר'}, //Name of the category presented in the task.
-				css : {color:'#31940F','font-size':'2em'}, //Style of the category title.
+				css : {color:'#31940F','font-size':'2.5em'}, //Style of the category title.
 				height : 4 //Used to position the "Or" in the combined block.
 			}, 
 			stimulusMedia : [ //Stimuli content as PIP's media objects
@@ -34,14 +34,14 @@ define(['pipAPI', 'https://baranan.github.io/minno-tasks/quiat8.js'], function(A
 					{word: 'אצלו'}					
 				], 
 			//Stimulus css
-			stimulusCss : {color:'#31940F','font-size':'1.8em'}
+			stimulusCss : {color:'#31940F','font-size':'2.5em'}
 		},
 			attribute1 :
 			{
 				name : 'צודק',
 				title : {
 					media : {word : 'צודק'},
-					css : {color:'#0000FF','font-size':'1.8em'},
+					css : {color:'#0000FF','font-size':'2.5em'},
 					height : 4 //Used to position the "Or" in the combined block.
 				},
 				stimulusMedia : [ //Stimuli content as PIP's media objects
@@ -52,14 +52,14 @@ define(['pipAPI', 'https://baranan.github.io/minno-tasks/quiat8.js'], function(A
 					{word: 'אמת'}					
 				],
 				//Stimulus css
-				stimulusCss : {color:'#0000FF','font-size':'2.3em'}
+				stimulusCss : {color:'#0000FF','font-size':'2.5em'}
 			},
 			attribute2 :
 			{
 				name : 'טועה',
 				title : {
 					media : {word : 'טועה'},
-					css : {color:'#0000FF','font-size':'1.8em'},
+					css : {color:'#0000FF','font-size':'2.5em'},
 					height : 4 //Used to position the "Or" in the combined block.
 				},
 				stimulusMedia : [ //Stimuli content as PIP's media objects
@@ -70,7 +70,7 @@ define(['pipAPI', 'https://baranan.github.io/minno-tasks/quiat8.js'], function(A
 					{word: 'שקר'}
 				],
 				//Stimulus css
-				stimulusCss : {color:'#0000FF','font-size':'2.3em'}
+				stimulusCss : {color:'#0000FF','font-size':'2.5em'}
 			},	
 			instAttributePractice: '<div><p align="center" style="font-size:20px; font-family:arial; direction: rtl">' +
                 '<font color="#000000"><u> חלק blockNum מתוך nBlocks </u><br/><br/></p>' +
