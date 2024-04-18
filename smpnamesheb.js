@@ -98,11 +98,11 @@ define(['pipAPI', 'https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/amp/qualt
 			randomizeLabelSides : false, //IF false, then label1 is on the left, and label2 is on the right.
 			exampleBlockInst: '<div><p style="font-size:20px; text-align:right; margin-right:10px; font-family:arial; direction: rtl"><color="000000"><br/>' + 
 			'הקישו על מקש <B>rightKey</B> ' +
-			'אם האות היא יותר נעימה מהאות הסינית הממוצעת <br/>' + 
+			'אם השם הוא של בן <br/>' + 
 			'הקישו על מקש <b>leftKey</b> ' + 
-			'אם האות היא פחות נעימה מהאות הסינית הממוצעת<br/><br/>' + 
-			'התמונות יופיעו ויעלמו במהירות <br/>' + 
-			'זכרו להתעלם מהתמונה שמופיעה לפני האות הסינית ולהעריך רק את האות הסינית עצמה<br/><br/></p>'  + 
+			'אם השם הוא של בת<br/><br/>' + 
+			'השמות יופיעו ויעלמו במהירות <br/>' + 
+			'זכרו להתעלם מהמילים שמופיעות לפני השם ולהעריך רק את השם עצמו<br/><br/></p>'  + 
 			'<p style="font-size:16px; text-align:center; font-family:arial"><color="000000"><br/><br/>' + 
 			'כאשר אתם מוכנים להתאמן בכמה צעדים במטלה לחצו על מקש הרווח</p>' + 
 			'<p style="font-size:12px; text-align:center; font-family:arial">' + 
