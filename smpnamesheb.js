@@ -108,12 +108,12 @@ define(['pipAPI', 'https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/amp/qualt
 			'<p style="font-size:12px; text-align:center; font-family:arial">' + 
 			'<color="000000">[Round 1 of nBlocks]</p></div>',
 			firstBlockInst : '<div><p style="font-size:20px; text-align:right; margin-right:10px; font-family:arial; direction: rtl"><color="000000"><br/>' + 
-			"ראיתם כמה מהר זה היה? אל תדאגו אם אתם מפספסים חלק מהתמונות <br/>" + 
-			'דרגו את האותיות הסיניות לפי תחושת הבטן שלכם<br/><br/>' + 
-			'התרכזו באות הסינית ודרגו אותה כיותר נעימה מהאות הסינית הממוצעת באמצעות מקש <b>rightKey</b> ' + 
-			'או כפחות נעימה מהאות הסינית הממוצעת באמצעות מקש <b>leftKey</b><br/><br/> ' + 
-			'העריכו את האות הסינית ולא את התמונה שמופיעה לפניה <br/>' + 
-			'תמונות אלו נועדו להסיח את דעתכם<br/><br/>' + 
+			"ראיתם כמה מהר זה היה? אל תדאגו אם אתם מפספסים חלק מהשמות <br/>" + 
+			'דרגו את השמות לפי תחושת הבטן שלכם<br/><br/>' + 
+			'התרכזו בשם ודרגו אותו כשם של בן באמצעות מקש <b>rightKey</b> ' + 
+			'או כשם של בת באמצעות מקש <b>leftKey</b><br/><br/> ' + 
+			'העריכו את השם ולא את המילים שמופיעות לפניו <br/>' + 
+			'מילים אלו נועדו להסיח את דעתכם<br/><br/>' + 
 			'<p style="font-size:16px; text-align:center; font-family:arial"><color="000000"><br/><br/>' + 
 			'מוכנים? לחצו על מקש הרווח כדי להתחיל</p>' + 
 			'<p style="font-size:12px; text-align:center; font-family:arial">' + 
