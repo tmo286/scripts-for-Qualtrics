@@ -4,83 +4,45 @@ define(['pipAPI', 'https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/amp/qualt
 	
 	
 	return ampExtension({
-		primeStimulusCSS : {color:'#000000','font-size':'2.3em'},
 		primeCats :  [
 			{
-				nameForFeedback : 'male',  //Will be used in the user feedback 
-				nameForLogging : 'male', //Will be used in the logging
+				nameForFeedback : 'Arbs',  //Will be used in the user feedback 
+				nameForLogging : 'Arbs', //Will be used in the logging
 				//An array of all media objects for this category.
 				mediaArray : [
-					{word: 'רפואה'},
-					{word: 'הנדסה'},
-					{word: 'מדעים'},
-					{word: 'משפטים'},
-					{word: 'פוליטיקה'},
-					{word: 'אינסטלציה'},
-					{word: 'חשמלאות'},
-					{word: 'ייעוץ השקעות'},
-                    {word: 'חקלאות'},
-					{word: 'גינון'},
-					{word: 'אבטחת מידע'},
-					{word: 'כבאות'},
-					{word: 'מכונאות'},
-					{word: 'תיכנות'},
-					{word: 'אבטחה'},	
-					{word: 'ראיית חשבון'},
-					{word: 'כלכלנות'},
-					{word: 'עריכת דין'},
-					{word: 'וטרינריה'},
-					{word: 'ניהול'},	
-					{word: 'יזמות'},
-					{word: 'פיתוח תוכנה'},
-					{word: 'אסטרונומיה'},
-					{word: 'בימוי סרטים'},						
-					{word: 'סנדלרות'}]}, 
+				        {image : 'arb1.jpg'}, 
+					{image : 'arb2.jpg'}, 
+					{image : 'arb3.jpg'}, 
+					{image : 'arb4.jpg'}, 
+					{image : 'arb5.jpg'}, 
+					{image : 'arb6.jpg'}]
+
+			}, 
 			{
-				nameForFeedback : 'female',  //Will be used in the user feedback 
-				nameForLogging : 'female', //Will be used in the logging
+				nameForFeedback : 'Jews',  //Will be used in the user feedback 
+				nameForLogging : 'Jews', //Will be used in the logging
 				//An array of all media objects for this category.
 				mediaArray : [
-					{word: 'סיעוד'},
-					{word: 'פסיכולוגיה'},
-					{word: 'הוראה'},
-					{word: 'ריפוי בעיסוק'},
-					{word: 'עבודה סוציאלית'},
-					{word: 'משאבי אנוש'},
-					{word: 'משק-בית'},
-					{word: 'ניקיון'},
-                    {word: 'קלדנות'},
-					{word: 'קלינאות תקשורת'},
-					{word: 'קוסמטיקה'},
-					{word: 'איפור'},
-					{word: 'עיצוב פנים'},
-					{word: 'מזכירות'},
-					{word: 'אדמיניסטרציה'},	
-					{word: 'עיצוב אופנה'},
-					{word: 'שירות לקוחות'},
-					{word: 'טיפול באומנות'},
-					{word: 'אפייה'},
-					{word: 'תפירה'},	
-					{word: 'תזונה'},
-					{word: 'דוגמנות'},
-					{word: 'מורה לריקוד'},
-					{word: 'טיפול בקשישים'},						
-					{word: 'טיפול בתינוקות'}]}, 
+				        {image : 'jew1.jpg'}, 
+					{image : 'jew2.jpg'}, 
+					{image : 'jew3.jpg'}, 
+					{image : 'jew4.jpg'}, 
+					{image : 'jew5.jpg'}, 
+					{image : 'jew6.jpg'}]
 			}
 		],
-			targetStimulusCSS : {color:'#000000','font-size':'2.3em'},
+			targetStimulusCSS : {color:'#0000FF','font-size':'2.3em'},
 			//The prime categories.
 			targetCats :  [
 				{
 					nameForLogging : 'chinese',  //Will be used in the logging
 					//An array of all media objects for this category. The default is pic1-pic200.jpg
 					mediaArray : [
-						{word: 'טל'}, {word: 'שי'}, {word: 'עומר'}, {word: 'חן'}, {word: 'שובל'}, {word: 'אור'}, {word: 'דניאל'}, {word: 'רותם'}, {word: 'יובל'}, 
-						{word: 'גל'}, {word: 'אביב'}, {word: 'גילי'}, {word: 'גיל'}, {word: 'דור'}, {word: 'דרור'}, {word: 'עדי'}, {word: 'שחר'}, {word: 'אריאל'}, {word: 'רוני'}, 
-						{word: 'לירון'}, {word: 'הדר'}, {word: 'ניב'}, {word: 'אלמוג'}, {word: 'ליאל'}, {word: 'מעיין'}, {word: 'דקל'}, {word: 'דורון'}, {word: 'זיו'}, {word: 'ירדן'}, 
-						{word: 'תום'}, {word: 'שוהם'}, {word: 'ליאור'}, {word: 'מתן'}, {word: 'נועם'}, {word: 'ניצן'}, {word: 'שקד'}, {word: 'כרמל'}, {word: 'סתיו'}, {word: 'מור'}, 
-						{word: 'עדן'}, {word: 'עמית'}, {word: 'שחף'}, {word: 'אופיר'}, {word: 'בר'}, {word: 'פז'}, {word: 'פלג'}, 
-						{word: 'רז'}, {word: 'זוהר'}, {word: 'לירז'}, {word: 'רביד'}, {word: 'אופק'}, {word: 'גפן'}, {word: 'הלל'}
+						{image : 'pic1.jpg'}, {image : 'pic2.jpg'}, {image : 'pic3.jpg'}, {image : 'pic4.jpg'}, {image : 'pic5.jpg'}, {image : 'pic6.jpg'}, {image : 'pic7.jpg'}, {image : 'pic8.jpg'}, {image : 'pic9.jpg'}, 
+						{image : 'pic10.jpg'}, {image : 'pic11.jpg'}, {image : 'pic12.jpg'}, {image : 'pic13.jpg'}, {image : 'pic14.jpg'}, {image : 'pic15.jpg'}, {image : 'pic16.jpg'}, {image : 'pic17.jpg'}, {image : 'pic18.jpg'}, {image : 'pic19.jpg'}, 
+						{image : 'pic20.jpg'}, {image : 'pic21.jpg'}, {image : 'pic22.jpg'}, {image : 'pic23.jpg'}, {image : 'pic24.jpg'}, {image : 'pic25.jpg'}, {image : 'pic26.jpg'}, {image : 'pic27.jpg'}, {image : 'pic28.jpg'}, {image : 'pic29.jpg'}, 
+						{image : 'pic30.jpg'}, {image : 'pic31.jpg'}, {image : 'pic32.jpg'}, {image : 'pic33.jpg'}, {image : 'pic34.jpg'}, {image : 'pic35.jpg'}, {image : 'pic36.jpg'}, {image : 'pic37.jpg'}, {image : 'pic38.jpg'}, {image : 'pic39.jpg'}, 
+						{image : 'pic40.jpg'}
 					]
 					
 				}
@@ -89,30 +51,29 @@ define(['pipAPI', 'https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/amp/qualt
 		{
 			nameForLogging : 'examplePrime', //Will be used in the logging
 			//An array of all media objects for this category.
-			mediaArray : [{word: 'רוקחות'}, {word: 'אדריכלות'}, {word: 'הפקת אירועים'}]
+			mediaArray : [{image : 'ampchair.jpg'}, {image : 'amplamp.jpg'}, {image : 'ampumbrella.jpg'}]
 		},
-			sortingLabel1 : 'בן', //Response is coded as 0. 
-			sortingLabel2 : 'בת',  //Response is coded as 1.
-			trialsInBlock : [50, 50, 50], //Number of trials in each block 
+			sortingLabel1 : 'נעים', //Response is coded as 0. 
+			sortingLabel2 : 'לא נעים',  //Response is coded as 1.
 			randomizeLabelSides : false, //IF false, then label1 is on the left, and label2 is on the right.
 			exampleBlockInst: '<div><p style="font-size:20px; text-align:right; margin-right:10px; font-family:arial; direction: rtl"><color="000000"><br/>' + 
 			'הקישו על מקש <B>rightKey</B> ' +
-			'אם השם הוא של בן <br/>' + 
+			'אם האות היא יותר נעימה מהאות הסינית הממוצעת <br/>' + 
 			'הקישו על מקש <b>leftKey</b> ' + 
-			'אם השם הוא של בת<br/><br/>' + 
-			'השמות יופיעו ויעלמו במהירות <br/>' + 
-			'זכרו להתעלם מהמילים שמופיעות לפני השם ולהעריך רק את השם עצמו<br/><br/></p>'  + 
+			'אם האות היא פחות נעימה מהאות הסינית הממוצעת<br/><br/>' + 
+			'התמונות יופיעו ויעלמו במהירות <br/>' + 
+			'זכרו להתעלם מהתמונה שמופיעה לפני האות הסינית ולהעריך רק את האות הסינית עצמה<br/><br/></p>'  + 
 			'<p style="font-size:16px; text-align:center; font-family:arial"><color="000000"><br/><br/>' + 
 			'כאשר אתם מוכנים להתאמן בכמה צעדים במטלה לחצו על מקש הרווח</p>' + 
 			'<p style="font-size:12px; text-align:center; font-family:arial">' + 
 			'<color="000000">[Round 1 of nBlocks]</p></div>',
 			firstBlockInst : '<div><p style="font-size:20px; text-align:right; margin-right:10px; font-family:arial; direction: rtl"><color="000000"><br/>' + 
-			"ראיתם כמה מהר זה היה? אל תדאגו אם אתם מפספסים חלק מהשמות <br/>" + 
-			'דרגו את השמות לפי תחושת הבטן שלכם<br/><br/>' + 
-			'התרכזו בשם ודרגו אותו כשם של בן באמצעות מקש <b>rightKey</b> ' + 
-			'או כשם של בת באמצעות מקש <b>leftKey</b><br/><br/> ' + 
-			'העריכו את השם ולא את המילים שמופיעות לפניו <br/>' + 
-			'מילים אלו נועדו להסיח את דעתכם<br/><br/>' + 
+			"ראיתם כמה מהר זה היה? אל תדאגו אם אתם מפספסים חלק מהתמונות <br/>" + 
+			'דרגו את האותיות הסיניות לפי תחושת הבטן שלכם<br/><br/>' + 
+			'התרכזו באות הסינית ודרגו אותה כיותר נעימה מהאות הסינית הממוצעת באמצעות מקש <b>rightKey</b> ' + 
+			'או כפחות נעימה מהאות הסינית הממוצעת באמצעות מקש <b>leftKey</b><br/><br/> ' + 
+			'העריכו את האות הסינית ולא את התמונה שמופיעה לפניה <br/>' + 
+			'תמונות אלו נועדו להסיח את דעתכם<br/><br/>' + 
 			'<p style="font-size:16px; text-align:center; font-family:arial"><color="000000"><br/><br/>' + 
 			'מוכנים? לחצו על מקש הרווח כדי להתחיל</p>' + 
 			'<p style="font-size:12px; text-align:center; font-family:arial">' + 
@@ -120,10 +81,10 @@ define(['pipAPI', 'https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/amp/qualt
 			middleBlockInst : '<div><p style="font-size:20px; text-align:right; margin-right:10px; font-family:arial; direction: rtl"><color="000000"><br/>' + 
 			'נמשיך לסבב נוסף של המטלה <br/>' + 
 			'החוקים נשארו אותו הדבר<br/><br/>' + 
-			'התרכזו בשם ודרגו אותו כשם של בן באמצעות מקש <b>rightKey</b> ' + 
-			'או כשם של בת באמצעות מקש <b>leftKey</b><br/><br/>' + 
-			'העריכו את השם ולא את המילים שמופיעות לפניו <br/>' + 
-			'מילים אלו נועדו להסיח את דעתכם<br/><br/>' +  
+			'התרכזו באות הסינית ודרגו אותה כיותר נעימה מהאות הסינית הממוצעת באמצעות מקש <b>rightKey</b> ' + 
+			'או כפחות נעימה מהאות הסינית הממוצעת באמצעות מקש <b>leftKey</b><br/><br/>' + 
+			'העריכו את האות הסינית ולא את התמונה שמופיעה לפניה <br/>' + 
+			'תמונות אלו נועדו להסיח את דעתכם<br/><br/>' +  
 			'<p style="font-size:16px; text-align:center; font-family:arial"><color="000000"><br/><br/>' + 
 			'מוכנים? לחצו על מקש הרווח כדי להתחיל</p>' + 
 			'<p style="font-size:12px; text-align:center; font-family:arial">' + 
@@ -131,15 +92,14 @@ define(['pipAPI', 'https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/amp/qualt
 			lastBlockInst : '<div><p style="font-size:20px; text-align:right; margin-right:10px; font-family:arial; direction: rtl"><color="000000"><br/>' + 
 			'נמשיך לסבב האחרון של המטלה <br/>' + 
 			'החוקים נשארו אותו הדבר<br/><br/>' + 
-			'התרכזו בשם ודרגו אותו כשם של בן באמצעות מקש <b>rightKey</b> ' + 
-			'או כשם של בת באמצעות מקש <b>leftKey</b><br/><br/>' + 
-			'העריכו את השם ולא את המילים שמופיעות לפניו <br/>' + 
-			'מילים אלו נועדו להסיח את דעתכם<br/><br/>' +  
+			'התרכזו באות הסינית ודרגו אותה כיותר נעימה מהאות הסינית הממוצעת באמצעות מקש <b>rightKey</b> ' + 
+			'או כפחות נעימה מהאות הסינית הממוצעת באמצעות מקש <b>leftKey</b><br/><br/>' + 
+			'העריכו את האות הסינית ולא את התמונה שמופיעה לפניה <br/>' + 
+			'תמונות אלו נועדו להסיח את דעתכם<br/><br/>' +  
 			'<p style="font-size:16px; text-align:center; font-family:arial"><color="000000"><br/><br/>' + 
-			'מוכנים? לחצו על מקש הרווח כדי להתחיל</p>' + 
+			'Ready? Hit the <b>space bar</b>.</p>' + 
 			'<p style="font-size:12px; text-align:center; font-family:arial">' + 
 			'<color="000000">[Round blockNum of nBlocks]</p></div>',	
-
                          endText: '<div><p style="font-size:20px; text-align:left; vertical-align:bottom; margin-left:10px; font-family:arial ; direction: rtl"><color="FFFFFF">'+
 			'סיימתם את המטלה <br/>' + 
 			'לחצו על מקש הרווח כדי להמשיך<br/><br/>' + 
