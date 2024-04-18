@@ -7,8 +7,8 @@ define(['pipAPI', 'https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/amp/qualt
 		primeStimulusCSS : {color:'#000000','font-size':'2.5em'},	
 		primeCats :  [
 			{
-				nameForFeedback : 'Arbs',  //Will be used in the user feedback 
-				nameForLogging : 'Arbs', //Will be used in the logging
+				nameForFeedback : 'male',  //Will be used in the user feedback 
+				nameForLogging : 'male', //Will be used in the logging
 				//An array of all media objects for this category.
 				mediaArray : [
 					{word: 'רפואה'},
@@ -38,16 +38,35 @@ define(['pipAPI', 'https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/amp/qualt
 					{word: 'סנדלרות'}]
 			}, 
 			{
-				nameForFeedback : 'Jews',  //Will be used in the user feedback 
-				nameForLogging : 'Jews', //Will be used in the logging
+				nameForFeedback : 'female',  //Will be used in the user feedback 
+				nameForLogging : 'female', //Will be used in the logging
 				//An array of all media objects for this category.
 				mediaArray : [
-				        {image : 'jew1.jpg'}, 
-					{image : 'jew2.jpg'}, 
-					{image : 'jew3.jpg'}, 
-					{image : 'jew4.jpg'}, 
-					{image : 'jew5.jpg'}, 
-					{image : 'jew6.jpg'}]
+					{word: 'סיעוד'},
+					{word: 'פסיכולוגיה'},
+					{word: 'הוראה'},
+					{word: 'ריפוי בעיסוק'},
+					{word: 'עבודה סוציאלית'},
+					{word: 'משאבי אנוש'},
+					{word: 'משק-בית'},
+					{word: 'ניקיון'},
+                                        {word: 'קלדנות'},
+					{word: 'קלינאות תקשורת'},
+					{word: 'קוסמטיקה'},
+					{word: 'איפור'},
+					{word: 'עיצוב פנים'},
+					{word: 'מזכירות'},
+					{word: 'אדמיניסטרציה'},	
+					{word: 'עיצוב אופנה'},
+					{word: 'שירות לקוחות'},
+					{word: 'טיפול באומנות'},
+					{word: 'אפייה'},
+					{word: 'תפירה'},	
+					{word: 'תזונה'},
+					{word: 'דוגמנות'},
+					{word: 'מורה לריקוד'},
+					{word: 'טיפול בקשישים'},						
+					{word: 'טיפול בתינוקות'}]
 			}
 		],
 			targetStimulusCSS : {color:'#0000FF','font-size':'2.3em'},
