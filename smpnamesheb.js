@@ -4,6 +4,7 @@ define(['pipAPI', 'https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/amp/qualt
 	
 	
 	return ampExtension({
+		primeStimulusCSS : {color:'#000000','font-size':'2.3em'},	
 		primeCats :  [
 			{
 				nameForFeedback : 'Arbs',  //Will be used in the user feedback 
