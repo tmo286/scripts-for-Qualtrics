@@ -69,7 +69,7 @@ define(['pipAPI', 'https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/amp/qualt
 					{word: 'טיפול בתינוקות'}]
 			}
 		],
-			targetStimulusCSS : {color:'#FF3A17','font-size':'2.5em'},
+			targetStimulusCSS : {color:'#145A32','font-size':'2.5em'},
 			//The prime categories.
 			targetCats :  [
 				{
@@ -90,7 +90,7 @@ define(['pipAPI', 'https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/amp/qualt
 		{
 			nameForLogging : 'examplePrime', //Will be used in the logging
 			//An array of all media objects for this category.
-			mediaArray : [{image : 'ampchair.jpg'}, {image : 'amplamp.jpg'}, {image : 'ampumbrella.jpg'}]
+			mediaArray : [{word: 'רוקחות'}, {word: 'אדריכלות'}, {word: 'הפקת אירועים'}]
 		},
 			sortingLabel1 : 'בן', //Response is coded as 0. 
 			sortingLabel2 : 'בת',  //Response is coded as 1.
