@@ -10,12 +10,12 @@ define(['pipAPI', 'https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/amp/qualt
 				nameForLogging : 'Arbs', //Will be used in the logging
 				//An array of all media objects for this category.
 				mediaArray : [
-				        {image : 'arb1.jpg'}, 
-					{image : 'arb2.jpg'}, 
-					{image : 'arb3.jpg'}, 
-					{image : 'arb4.jpg'}, 
-					{image : 'arb5.jpg'}, 
-					{image : 'arb6.jpg'}]
+					{word: 'רפואה'},
+					{word: 'הנדסה'},
+					{word: 'מדעים'},
+					{word: 'משפטים'},
+					{word: 'פוליטיקה'},
+					{word: 'אינסטלציה'}]
 
 			}, 
 			{
