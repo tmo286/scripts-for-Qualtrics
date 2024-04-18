@@ -4,7 +4,7 @@ define(['pipAPI', 'https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/amp/qualt
 	
 	
 	return ampExtension({
-		primeStimulusCSS : {color:'#000000','font-size':'2.3em'},	
+		primeStimulusCSS : {color:'#000000','font-size':'2.5em'},	
 		primeCats :  [
 			{
 				nameForFeedback : 'Arbs',  //Will be used in the user feedback 
@@ -16,8 +16,26 @@ define(['pipAPI', 'https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/amp/qualt
 					{word: 'מדעים'},
 					{word: 'משפטים'},
 					{word: 'פוליטיקה'},
-					{word: 'אינסטלציה'}]
-
+					{word: 'אינסטלציה'},
+					{word: 'חשמלאות'},
+					{word: 'ייעוץ השקעות'},
+                                        {word: 'חקלאות'},
+					{word: 'גינון'},
+					{word: 'אבטחת מידע'},
+					{word: 'כבאות'},
+					{word: 'מכונאות'},
+					{word: 'תיכנות'},
+					{word: 'אבטחה'},	
+					{word: 'ראיית חשבון'},
+					{word: 'כלכלנות'},
+					{word: 'עריכת דין'},
+					{word: 'וטרינריה'},
+					{word: 'ניהול'},	
+					{word: 'יזמות'},
+					{word: 'פיתוח תוכנה'},
+					{word: 'אסטרונומיה'},
+					{word: 'בימוי סרטים'},						
+					{word: 'סנדלרות'}]
 			}, 
 			{
 				nameForFeedback : 'Jews',  //Will be used in the user feedback 
