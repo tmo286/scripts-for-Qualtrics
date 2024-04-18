@@ -92,8 +92,9 @@ define(['pipAPI', 'https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/amp/qualt
 			//An array of all media objects for this category.
 			mediaArray : [{image : 'ampchair.jpg'}, {image : 'amplamp.jpg'}, {image : 'ampumbrella.jpg'}]
 		},
-			sortingLabel1 : 'נעים', //Response is coded as 0. 
-			sortingLabel2 : 'לא נעים',  //Response is coded as 1.
+			sortingLabel1 : 'בן', //Response is coded as 0. 
+			sortingLabel2 : 'בת',  //Response is coded as 1.
+			trialsInBlock : [50, 50, 50], //Number of trials in each block 
 			randomizeLabelSides : false, //IF false, then label1 is on the left, and label2 is on the right.
 			exampleBlockInst: '<div><p style="font-size:20px; text-align:right; margin-right:10px; font-family:arial; direction: rtl"><color="000000"><br/>' + 
 			'הקישו על מקש <B>rightKey</B> ' +
