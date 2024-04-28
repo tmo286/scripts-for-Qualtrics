@@ -10,12 +10,10 @@ define(['pipAPI', 'https://baranan.github.io/minno-tasks/quiat8.js'], function(A
 				height : 4 //Used to position the "Or" in the combined block.
 			}, 
 			stimulusMedia : [ //Stimuli content as PIP's media objects
-    		    {image : 'secular1.jpg'}, 
-    			{image : 'secular2.jpg'}, 
-    			{image : 'secular3.jpg'}, 
-    			{image : 'secular4.jpg'}, 
-    			{image : 'secular5.jpg'},
-    			{image : 'secular6.jpg'}	
+    		        {image : 'secu1.jpg'}, 
+    			{image : 'secu2.jpg'}, 
+    			{image : 'secu3.jpg'}, 
+    			{image : 'secu4.jpg'}	
 			], 
 			//Stimulus css (style)
 			stimulusCss : {color:'#31940F','font-size':'1.8em'}
@@ -28,12 +26,10 @@ define(['pipAPI', 'https://baranan.github.io/minno-tasks/quiat8.js'], function(A
 				height : 4 //Used to position the "Or" in the combined block.
 			}, 
 			stimulusMedia : [ //Stimuli content as PIP's media objects
-    		    {image : 'orthodox1.jpg'}, 
-    			{image : 'orthodox2.jpg'}, 
-    			{image : 'orthodox3.jpg'}, 
-    			{image : 'orthodox4.jpg'}, 
-    			{image : 'orthodox5.jpg'},
-    			{image : 'orthodox6.jpg'}			
+    		        {image : 'ortho1.jpg'}, 
+    			{image : 'ortho2.jpg'}, 
+    			{image : 'ortho3.jpg'}, 
+    			{image : 'ortho4.jpg'}			
 				], 
 			//Stimulus css
 			stimulusCss : {color:'#31940F','font-size':'1.8em'}
