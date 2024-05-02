@@ -6,7 +6,7 @@ define(['pipAPI', 'https://baranan.github.io/minno-tasks/quiat8.js'], function(A
 			name : 'אני', //Will appear in the data.
 			title : {
 				media : {word : 'אני'}, //Name of the category presented in the task.
-				css : {color:'#31940F','font-size':'2.5em'}, //Style of the category title.
+				css : {color:'#31940F','font-size':'2.3em'}, //Style of the category title.
 				height : 4 //Used to position the "Or" in the combined block.
 			}, 
 			stimulusMedia : [ //Stimuli content as PIP's media objects
@@ -23,7 +23,7 @@ define(['pipAPI', 'https://baranan.github.io/minno-tasks/quiat8.js'], function(A
 			name : 'אחר', //Will appear in the data.
 			title : {
 				media : {word : 'אחר'}, //Name of the category presented in the task.
-				css : {color:'#31940F','font-size':'2.5em'}, //Style of the category title.
+				css : {color:'#31940F','font-size':'2.3em'}, //Style of the category title.
 				height : 4 //Used to position the "Or" in the combined block.
 			}, 
 			stimulusMedia : [ //Stimuli content as PIP's media objects
@@ -41,7 +41,7 @@ define(['pipAPI', 'https://baranan.github.io/minno-tasks/quiat8.js'], function(A
 				name : 'צודק',
 				title : {
 					media : {word : 'צודק'},
-					css : {color:'#0000FF','font-size':'2.5em'},
+					css : {color:'#0000FF','font-size':'2.3em'},
 					height : 4 //Used to position the "Or" in the combined block.
 				},
 				stimulusMedia : [ //Stimuli content as PIP's media objects
@@ -59,7 +59,7 @@ define(['pipAPI', 'https://baranan.github.io/minno-tasks/quiat8.js'], function(A
 				name : 'טועה',
 				title : {
 					media : {word : 'טועה'},
-					css : {color:'#0000FF','font-size':'2.5em'},
+					css : {color:'#0000FF','font-size':'2.3em'},
 					height : 4 //Used to position the "Or" in the combined block.
 				},
 				stimulusMedia : [ //Stimuli content as PIP's media objects
