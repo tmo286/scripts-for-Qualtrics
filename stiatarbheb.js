@@ -67,9 +67,9 @@ define(['pipAPI', 'https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/stiat/qua
                 '<font color="#000000"><u> חלק blockNum מתוך nBlocks </u><br/><br/></p>' +
 				'<p style="font-size:20px; text-align: center; vertical-align:bottom; margin-right:10px; font-family:arial; direction: rtl">' +
                 'הקישו באצבע שמאל על מקש <b>E</b> ' + 
-                'עבור פריטים ששייכים לקטגוריה <font color="#0000ff">Attribute1</font><br/>'+
+                'עבור פריטים ששייכים לקטגוריה <font color="#0000ff">attribute1</font><br/>'+
                 'הקישו באצבע ימין על מקש <b>I</b> '+ 
-                'עבור פריטים ששייכים לקטגוריה <font color="#0000ff">Attribute2</font><br/>'+
+                'עבור פריטים ששייכים לקטגוריה <font color="#0000ff">attribute2</font><br/>'+
                 'אם תבצעו טעות, <font color="#ff0000"><b>X</b></font> אדום יופיע<br/> '+
 				'לחצו על המקש האחר כדי להמשיך<br/>' +
 				'<u>בצעו מהר ככל האפשר אך היו מדויקים</u><br/><br/></p>'+
@@ -79,10 +79,10 @@ define(['pipAPI', 'https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/stiat/qua
                 '<font color="#000000"><u> חלק blockNum מתוך nBlocks </u><br/><br/></p>' +
 				'<p style="font-size:20px; text-align:left; vertical-align:bottom; margin-left:10px; font-family:arial; direction: rtl">' +
                 'הקישו באצבע שמאל על מקש <b>E</b> '+ 
-                'עבור פריטים ששייכים לקטגוריה <font color="#0000ff">Attribute1</font> ' +
+                'עבור פריטים ששייכים לקטגוריה <font color="#0000ff">attribute1</font> ' +
                 'הקישו באצבע ימין על מקש <b>I</b> ' + 
-                'עבור פריטים ששייכים לקטגוריה <font color="#0000ff">Attribute2</font> '+
-                'או עבור פריטים ששייכים לקטגוריה <font color="#31b404">thecategory</font><br/>'+				
+                'עבור פריטים ששייכים לקטגוריה <font color="#0000ff">attribute2</font> '+
+                'או עבור פריטים ששייכים לקטגוריה <font color="#31b404">category</font><br/>'+				
 				'כל פריט מתאים רק לקטגוריה אחת<br/><br/>' +
                 'אם תבצעו טעות, <font color="#ff0000"><b>X</b></font> אדום יופיע<br/>'+
 				'לחצו על המקש האחר כדי להמשיך<br/>' +
@@ -92,10 +92,10 @@ define(['pipAPI', 'https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/stiat/qua
                 '<font color="#000000"><u> חלק blockNum מתוך nBlocks </u><br/><br/></p>' +
 				'<p style="font-size:20px; text-align:left; vertical-align:bottom; margin-left:10px; font-family:arial; direction: rtl">' +
                 'הקישו באצבע שמאל על מקש <b>E</b> '+ 
-                'עבור פריטים ששייכים לקטגוריה <font color="#0000ff">Attribute1</font> ' +
-                'או עבור פריטים ששייכים לקטגוריה <font color="#31b404">thecategory</font><br/>'+				
+                'עבור פריטים ששייכים לקטגוריה <font color="#0000ff">attribute1</font> ' +
+                'או עבור פריטים ששייכים לקטגוריה <font color="#31b404">category</font><br/>'+				
                 'הקישו באצבע ימין על מקש <b>I</b> ' + 
-                'עבור פריטים ששייכים לקטגוריה <font color="#0000ff">Attribute2</font> '+			
+                'עבור פריטים ששייכים לקטגוריה <font color="#0000ff">attribute2</font> '+			
 				'כל פריט מתאים רק לקטגוריה אחת<br/><br/>' +
                 'אם תבצעו טעות, <font color="#ff0000"><b>X</b></font> אדום יופיע<br/>'+
 				'לחצו על המקש האחר כדי להמשיך<br/>' +
