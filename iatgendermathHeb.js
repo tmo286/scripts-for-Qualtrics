@@ -2,7 +2,7 @@ define(['pipAPI', 'https://baranan.github.io/minno-tasks/quiat8.js'], function(A
     var API = new APIConstructor();
 
 	return iatExtension({
-		category : {
+		category1 : {
 			name : 'גברים', //Will appear in the data.
 			title : {
 				media : {word : 'גברים'}, //Name of the category presented in the task.
