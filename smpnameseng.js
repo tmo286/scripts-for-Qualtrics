@@ -93,7 +93,7 @@ define(['pipAPI', 'https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/amp/qualt
 		{
 			nameForLogging : 'examplePrime', //Will be used in the logging
 			//An array of all media objects for this category.
-			mediaArray : [{word : 'ampchair.jpg'}, {word  : 'amplamp.jpg'}, {word  : 'ampumbrella.jpg'}]
+			mediaArray : [{word : 'Graphic designer'}, {word  : 'Pharmacist'}, {word  : 'Translator'}]
 		},
 		sortingLabel1 : 'Male', //Response is coded as 0. 
 		sortingLabel2 : 'Female',  //Response is coded as 1.
@@ -149,3 +149,4 @@ define(['pipAPI', 'https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/amp/qualt
 	});
 
 });
+
