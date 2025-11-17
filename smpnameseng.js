@@ -99,7 +99,7 @@ define(['pipAPI', 'https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/amp/qualt
 		sortingLabel2 : 'Female',  //Response is coded as 1.
 		trialsInBlock : [50, 50, 50], //Number of trials in each block 		
 		randomizeLabelSides : false, 
-		targetCat : 'name'
+		targetCat : 'name',
 			//Instructions text for the 2-responses version.
 			exampleBlockInst: '<div><p style="font-size:20px; text-align:left; margin-left:10px; font-family:arial"><color="000000"><br/>' + 
 			'Press the key <B>rightKey</B> if the targetCat is a rightAttribute name. ' + 
@@ -147,4 +147,5 @@ define(['pipAPI', 'https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/amp/qualt
 			image : 'https://tmo286.github.io/scripts-for-Qualtrics/images/'
 		}
 	});
+
 });
