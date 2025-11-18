@@ -85,7 +85,7 @@ define(['pipAPI', 'https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/amp/qualt
 						{word : 'Charlie'}, {word : 'Quinn'}, {word : 'Phoenix'}, {word : 'Taylor'}, {word : 'Dallas'}, {word : 'Milan'}, {word : 'Lennox'}, {word : 'Alexis'}, {word : 'Hunter'}, {word : 'Remi'}, 
 						{word : 'Rowan'}, {word : 'Cameron'}, {word : 'Noah'}, {word : 'Nova'}, {word : 'Lennon'}, {word : 'Kai'}, {word : 'River'}, {word : 'Rory'}, {word : 'Sutton'}, 
 						{word : 'Logan'},{word : 'Oakley'}, {word : 'Shiloh'}, {word : 'Sawyer'}, {word : 'Carter'}, {word : 'Dylan'}, {word : 'Emerson'}, {word : 'Sage'}, {word : 'Remington'},  
-						{word : 'Amari'}, {word : 'Finley'}, {word : 'Peyton'}, {word : 'Tatum'}, {word : 'Angel'}, {word : 'Ryan'}, {word : 'Blake'}, {word :'Dakota'}, {word : 'Ezra'},{word : 'Eden'}, {word : 'Jordan'}, {word : 'Morgan'}, {word : 'Hayden'}
+						{word : 'Amari'}, {word : 'Finley'}, {word : 'Peyton'}, {word : 'Tatum'}, {word : 'Angel'}, {word : 'Ryan'}, {word : 'Blake'}, {word :'Dakota'}, {word : 'Karsyn'},{word : 'Eden'}, {word : 'Jordan'}, {word : 'Morgan'}, {word : 'Hayden'}
 					]
 					
 				}
@@ -150,5 +150,6 @@ define(['pipAPI', 'https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/amp/qualt
 	});
 
 });
+
 
 
