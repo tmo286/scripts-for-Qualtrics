@@ -45,10 +45,10 @@ define(['pipAPI', 'https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/amp/qualt
 				//An array of all media objects for this category.
 				mediaArray : [
     		    {word : 'Nurse'}, 
-    			{word : 'Elementary school teacher'}, 
+    			{word : 'School teacher'}, 
     			{word : 'Flight attendant'}, 
     			{word : 'Social worker'},
-    			{word : 'Administrative assistant'},
+    			{word : 'Secretary'},
     			{word : 'Childcare worker'},
     			{word : 'Dietitian'},
     			{word : 'Librarian'},
@@ -58,14 +58,14 @@ define(['pipAPI', 'https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/amp/qualt
     			{word : 'Event planner'},
     			{word : 'Midwife'},
     			{word : 'Receptionist'},
-    			{word : 'Customer service representative'},
-    			{word : 'Human resources specialist'},
+    			{word : 'Sales assistant'},
+    			{word : 'HR Specialist'},
     			{word : 'Therapist'},
-    			{word : 'Speech-language pathologist'},
+    			{word : 'Speech therapist'},
     			{word : 'Kindergarten teacher'},
     			{word : 'Fashion designer'},
     			{word : 'Dental hygienist'},
-    			{word : 'Public relations specialist'},
+    			{word : 'Press Officer'},
     			{word : 'Wedding planner'},
     			{word : 'Retail associate'},
     			{word : 'Personal assistant'}
@@ -150,6 +150,7 @@ define(['pipAPI', 'https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/amp/qualt
 	});
 
 });
+
 
 
 
