@@ -6,7 +6,7 @@ define(['pipAPI', 'https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/IAT/qualt
 			name : 'Light-Skinned Black People', //Will appear in the data.
 			title : {
 				media : {word : 'Light-Skinned Black People'}, //Name of the category presented in the task.
-				css : {color:'#31940F','font-size':'1.3em'}, //Style of the category title.
+				css : {color:'#31940F','font-size':'1.5em'}, //Style of the category title.
 				height : 4 //Used to position the "Or" in the combined block.
 			}, 
 			stimulusMedia : [ //Stimuli content as PIP's media objects
@@ -24,7 +24,7 @@ define(['pipAPI', 'https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/IAT/qualt
 			name : 'Dark-Skinned Black People', //Will appear in the data.
 			title : {
 				media : {word : 'Dark-Skinned Black People'}, //Name of the category presented in the task.
-				css : {color:'#31940F','font-size':'1.3em'}, //Style of the category title.
+				css : {color:'#31940F','font-size':'1.5em'}, //Style of the category title.
 				height : 4 //Used to position the "Or" in the combined block.
 			}, 
 			stimulusMedia : [ //Stimuli content as PIP's media objects
